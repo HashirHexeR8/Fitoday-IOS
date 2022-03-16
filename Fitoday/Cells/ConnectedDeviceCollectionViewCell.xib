@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConnectedDeviceCollectionViewCell" customModule="Fitoday" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSU-HG-Tbf">
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="183"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2DW-wt-h2Q">
+                                <rect key="frame" x="79" y="10" width="90" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmartJumpRopeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="9Y0-Bh-6WL">
+                                        <rect key="frame" x="13.5" y="13.5" width="63" height="63"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.83137254901960778" blue="0.77254901960784317" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9Y0-Bh-6WL" firstAttribute="centerY" secondItem="2DW-wt-h2Q" secondAttribute="centerY" id="3d0-BA-2rB"/>
+                                    <constraint firstAttribute="height" constant="90" id="Q04-6Q-bCu"/>
+                                    <constraint firstItem="9Y0-Bh-6WL" firstAttribute="width" secondItem="2DW-wt-h2Q" secondAttribute="width" multiplier="0.7" id="Rwh-Mg-fDo"/>
+                                    <constraint firstAttribute="width" constant="90" id="TgK-hN-mU8"/>
+                                    <constraint firstItem="9Y0-Bh-6WL" firstAttribute="height" secondItem="2DW-wt-h2Q" secondAttribute="height" multiplier="0.7" id="h6T-g9-Dgr"/>
+                                    <constraint firstItem="9Y0-Bh-6WL" firstAttribute="centerX" secondItem="2DW-wt-h2Q" secondAttribute="centerX" id="kTS-DS-9Gj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIn-gd-oTn">
+                                <rect key="frame" x="101.5" y="105" width="45.5" height="9"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="8"/>
+                                <color key="textColor" red="0.0" green="0.12156862745098039" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KIn-gd-oTn" firstAttribute="centerX" secondItem="cSU-HG-Tbf" secondAttribute="centerX" id="Pn8-ql-jqb"/>
+                            <constraint firstItem="KIn-gd-oTn" firstAttribute="top" secondItem="2DW-wt-h2Q" secondAttribute="bottom" constant="5" id="QHj-5V-aQe"/>
+                            <constraint firstItem="2DW-wt-h2Q" firstAttribute="top" secondItem="cSU-HG-Tbf" secondAttribute="top" constant="10" id="ofe-XR-PV4"/>
+                            <constraint firstItem="2DW-wt-h2Q" firstAttribute="centerX" secondItem="cSU-HG-Tbf" secondAttribute="centerX" id="ysO-g5-CUV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cSU-HG-Tbf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="etp-Mo-7Ek"/>
+                <constraint firstAttribute="bottom" secondItem="cSU-HG-Tbf" secondAttribute="bottom" id="kmK-w1-6Y0"/>
+                <constraint firstItem="cSU-HG-Tbf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="olp-T4-uR8"/>
+                <constraint firstAttribute="trailing" secondItem="cSU-HG-Tbf" secondAttribute="trailing" id="xN2-jj-8nD"/>
+            </constraints>
+            <size key="customSize" width="248" height="183"/>
+            <connections>
+                <outlet property="connectedDeviceIconViewContainer" destination="2DW-wt-h2Q" id="XwN-zg-JnC"/>
+            </connections>
+            <point key="canvasLocation" x="281.15942028985512" y="59.933035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SmartJumpRopeIcon" width="88" height="85"/>
+    </resources>
+</document>

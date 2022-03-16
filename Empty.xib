@@ -40,21 +40,24 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXi-tu-8nM" userLabel="viewIntroScroller">
                                 <rect key="frame" x="0.0" y="41" width="414" height="409"/>
                                 <subviews>
-                                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="j2J-dl-y2Q">
-                                        <rect key="frame" x="149.5" y="383" width="115.5" height="26"/>
-                                        <color key="pageIndicatorTintColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="currentPageIndicatorTintColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    </pageControl>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpd-M7-Xd2">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="367"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="qnD-nx-heq"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="tEv-qy-alR"/>
-                                    </scrollView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="P5M-Ot-Ixu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="rhv-td-FjA">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                                <locale key="locale" localeIdentifier="en"/>
+                                            </datePicker>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="j2J-dl-y2Q" firstAttribute="centerX" secondItem="eXi-tu-8nM" secondAttribute="centerX" id="4eV-FK-yjy"/>
-                                    <constraint firstAttribute="bottom" secondItem="j2J-dl-y2Q" secondAttribute="bottom" id="bwv-e9-47D"/>
+                                    <constraint firstAttribute="trailing" secondItem="P5M-Ot-Ixu" secondAttribute="trailing" id="8Z5-nh-y3j"/>
+                                    <constraint firstItem="P5M-Ot-Ixu" firstAttribute="leading" secondItem="eXi-tu-8nM" secondAttribute="leading" id="GXf-DW-1nc"/>
+                                    <constraint firstItem="P5M-Ot-Ixu" firstAttribute="leading" secondItem="eXi-tu-8nM" secondAttribute="leading" id="O5i-01-aeS"/>
+                                    <constraint firstItem="P5M-Ot-Ixu" firstAttribute="top" secondItem="eXi-tu-8nM" secondAttribute="top" id="P5J-et-2e7"/>
+                                    <constraint firstAttribute="trailing" secondItem="P5M-Ot-Ixu" secondAttribute="trailing" id="aCl-mS-EKt"/>
+                                    <constraint firstAttribute="bottom" secondItem="P5M-Ot-Ixu" secondAttribute="bottom" id="gER-Dl-t4t"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vC2-pQ-zn5" userLabel="viewLogin">
@@ -214,19 +217,230 @@
                 <outlet property="btnSignupWithEmail" destination="O53-e3-LZC" id="gul-EH-26J"/>
                 <outlet property="btnSignupWithFacebook" destination="jgj-I1-ftM" id="ebV-dk-vEc"/>
                 <outlet property="btnSignupWithGmail" destination="Sgf-k4-06i" id="9VX-xc-CrZ"/>
-                <outlet property="pageControl" destination="j2J-dl-y2Q" id="QeW-Pa-vvE"/>
-                <outlet property="scrollView" destination="Rpd-M7-Xd2" id="QZX-go-MGr"/>
             </connections>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </viewController>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zA2-Wj-TF9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="qGC-4J-RpJ" customClass="GradientView" customModule="Fitoday" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoJ-nH-ouf">
+                            <rect key="frame" x="158.5" y="80" width="97" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="YTH-p1-jfQ">
+                            <rect key="frame" x="20.5" y="140.5" width="373" height="579"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-Oq-XWp" userLabel="containerEmailField">
+                                    <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-R4-sqa" customClass="FitodayTextField" customModule="Fitoday" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                                            <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="QUJ-R4-sqa" firstAttribute="top" secondItem="UcZ-Oq-XWp" secondAttribute="top" id="2Yu-aT-78A"/>
+                                        <constraint firstAttribute="trailing" secondItem="QUJ-R4-sqa" secondAttribute="trailing" id="AhY-G6-KPh"/>
+                                        <constraint firstAttribute="width" constant="373" id="NaQ-kg-dz0"/>
+                                        <constraint firstItem="QUJ-R4-sqa" firstAttribute="leading" secondItem="UcZ-Oq-XWp" secondAttribute="leading" id="hNO-Tp-Z6S"/>
+                                        <constraint firstAttribute="height" constant="60" id="iUx-Pf-PJ8"/>
+                                        <constraint firstAttribute="bottom" secondItem="QUJ-R4-sqa" secondAttribute="bottom" id="mTO-Re-2fg"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlh-v1-qo6" userLabel="containerPasswordField">
+                                    <rect key="frame" x="0.0" y="94" width="373" height="60"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-oe-zbE" customClass="FitodayTextField" customModule="Fitoday" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                                            <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.14117647059999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="38n-R0-h45"/>
+                                        <constraint firstAttribute="width" constant="373" id="8tL-4x-VgL"/>
+                                        <constraint firstItem="oTy-oe-zbE" firstAttribute="leading" secondItem="rlh-v1-qo6" secondAttribute="leading" id="AsF-F9-LiC"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="HUO-kf-35l"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="373" id="UUd-JL-oec"/>
+                                        <constraint firstItem="oTy-oe-zbE" firstAttribute="top" secondItem="rlh-v1-qo6" secondAttribute="top" id="daT-RX-aej"/>
+                                        <constraint firstAttribute="bottom" secondItem="oTy-oe-zbE" secondAttribute="bottom" id="mnE-mV-6AE"/>
+                                        <constraint firstAttribute="trailing" secondItem="oTy-oe-zbE" secondAttribute="trailing" id="weJ-5n-xcD"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDY-L6-66E" userLabel="policyTextContainer">
+                                    <rect key="frame" x="0.0" y="188" width="373" height="300"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1N-zh-N8k" userLabel="birthdayLabel">
+                                            <rect key="frame" x="10" y="0.0" width="360" height="30"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BirthdayCake" translatesAutoresizingMaskIntoConstraints="NO" id="Nk2-xm-LxA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="16" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="p2l-v9-N8P"/>
+                                                        <constraint firstAttribute="width" constant="16" id="yXA-iQ-sL3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Birthday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwq-Ml-oSj">
+                                                    <rect key="frame" x="31" y="6.5" width="120" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uwq-Ml-oSj" firstAttribute="centerY" secondItem="S1N-zh-N8k" secondAttribute="centerY" id="BIj-E9-rhQ"/>
+                                                <constraint firstAttribute="width" constant="360" id="ZGe-Dx-5da"/>
+                                                <constraint firstItem="Nk2-xm-LxA" firstAttribute="top" secondItem="S1N-zh-N8k" secondAttribute="top" id="g2r-Zh-uSi"/>
+                                                <constraint firstItem="Nk2-xm-LxA" firstAttribute="leading" secondItem="S1N-zh-N8k" secondAttribute="leading" id="qzW-SE-EAF"/>
+                                                <constraint firstAttribute="height" constant="30" id="tbk-il-aQS"/>
+                                                <constraint firstItem="uwq-Ml-oSj" firstAttribute="leading" secondItem="Nk2-xm-LxA" secondAttribute="trailing" constant="15" id="yaU-BI-h4N"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9BA-Td-Wyj" userLabel="SeparatorTop">
+                                            <rect key="frame" x="10" y="30" width="360" height="2"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="2" id="Jhv-tj-Dmh"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="50y-uR-hsZ">
+                                            <rect key="frame" x="10" y="47" width="353" height="216"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Vpv-dp-MUE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="216"/>
+                                                    <locale key="locale" localeIdentifier="en_GB"/>
+                                                </datePicker>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="373" id="1DG-U9-jDc"/>
+                                        <constraint firstItem="S1N-zh-N8k" firstAttribute="leading" secondItem="lDY-L6-66E" secondAttribute="leading" constant="10" id="2ag-u0-FkQ"/>
+                                        <constraint firstItem="9BA-Td-Wyj" firstAttribute="leading" secondItem="lDY-L6-66E" secondAttribute="leading" constant="10" id="77r-IT-IKS"/>
+                                        <constraint firstItem="S1N-zh-N8k" firstAttribute="top" secondItem="lDY-L6-66E" secondAttribute="top" id="DVF-da-DxZ"/>
+                                        <constraint firstItem="9BA-Td-Wyj" firstAttribute="top" secondItem="S1N-zh-N8k" secondAttribute="bottom" id="Tq3-oY-mAT"/>
+                                        <constraint firstAttribute="trailing" secondItem="50y-uR-hsZ" secondAttribute="trailing" constant="10" id="gjE-VU-EDe"/>
+                                        <constraint firstItem="50y-uR-hsZ" firstAttribute="leading" secondItem="lDY-L6-66E" secondAttribute="leading" constant="10" id="gqx-K4-fU6"/>
+                                        <constraint firstItem="9BA-Td-Wyj" firstAttribute="width" secondItem="S1N-zh-N8k" secondAttribute="width" id="khS-Sv-uDg"/>
+                                        <constraint firstAttribute="height" constant="300" id="mXQ-0H-4cj" userLabel="height = 300"/>
+                                        <constraint firstItem="50y-uR-hsZ" firstAttribute="top" secondItem="9BA-Td-Wyj" secondAttribute="bottom" constant="15" id="ozM-Jf-yQd"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVC-ry-3jg">
+                                    <rect key="frame" x="14" y="522" width="345" height="57"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="57" id="Fkn-sV-X8f"/>
+                                        <constraint firstAttribute="width" constant="345" id="xPz-PO-cxt"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Create Account" cornerStyle="capsule">
+                                        <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                        <color key="baseBackgroundColor" red="0.4823529412" green="0.56470588239999997" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="lDY-L6-66E" firstAttribute="width" secondItem="rlh-v1-qo6" secondAttribute="width" id="pUG-IZ-TYI"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="ynm-BQ-c6h"/>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstItem="PoJ-nH-ouf" firstAttribute="centerX" secondItem="qGC-4J-RpJ" secondAttribute="centerX" id="TEi-QC-nca"/>
+                        <constraint firstItem="YTH-p1-jfQ" firstAttribute="top" secondItem="PoJ-nH-ouf" secondAttribute="bottom" constant="40" id="Za2-gg-QIK"/>
+                        <constraint firstItem="YTH-p1-jfQ" firstAttribute="centerX" secondItem="qGC-4J-RpJ" secondAttribute="centerX" id="yIc-05-MS1"/>
+                        <constraint firstItem="PoJ-nH-ouf" firstAttribute="top" secondItem="qGC-4J-RpJ" secondAttribute="top" constant="80" id="zR6-Uq-jSC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                            <color key="value" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                            <color key="value" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="q8h-vT-Nqh"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
     </objects>
+    <designables>
+        <designable name="QUJ-R4-sqa">
+            <size key="intrinsicContentSize" width="119.5" height="47.5"/>
+        </designable>
+        <designable name="oTy-oe-zbE">
+            <size key="intrinsicContentSize" width="118" height="46"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="BirthdayCake" width="16" height="18"/>
         <image name="FitodayTopLogo" width="90" height="33"/>
         <image name="SignInWithEmailLogo" width="26" height="22"/>
         <image name="SignInWithFacebookLogo" width="57" height="36"/>
         <image name="SignInWithGmailLogo" width="36" height="36"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -183,7 +183,7 @@
                                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="pob-Fc-CSr" firstAttribute="centerX" secondItem="zuH-U5-OuD" secondAttribute="centerX" id="Bam-ud-AoM"/>
                                                             <constraint firstItem="pob-Fc-CSr" firstAttribute="centerY" secondItem="zuH-U5-OuD" secondAttribute="centerY" id="UH6-8I-dAF"/>

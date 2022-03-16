@@ -51,14 +51,52 @@ class ViewController: UIViewController, UIPageViewControllerDelegate, UIPageView
         
         pageViewController.setViewControllers([introControllers[0]], direction: .forward, animated: true)
                 
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.someAction(_:)))
-        self.btnSignupJoinFitoday.addGestureRecognizer(gesture)
+        let loginWithEmailClickGesture = UITapGestureRecognizer(target: self, action: #selector(self.onLoginWithEmailClicked(_:)))
+        self.btnSignupWithEmail.isUserInteractionEnabled = true
+        self.btnSignupWithEmail.addGestureRecognizer(loginWithEmailClickGesture)
+        
+        let loginWithFacebookClickGesture = UITapGestureRecognizer(target: self, action: #selector(self.onLoginWithFacebookClicked(_:)))
+        self.btnSignupWithFacebook.isUserInteractionEnabled = true
+        self.btnSignupWithFacebook.addGestureRecognizer(loginWithFacebookClickGesture)
+        
+        let loginWithGoogleClickGesture = UITapGestureRecognizer(target: self, action: #selector(self.onLoginWithGmailClicked(_:)))
+        self.btnSignupWithGmail.isUserInteractionEnabled = true
+        self.btnSignupWithGmail.addGestureRecognizer(loginWithGoogleClickGesture)
+        
+        let joinFitodayClickGesture = UITapGestureRecognizer(target: self, action: #selector(self.onJoinFitodayClicked(_:)))
+        self.btnSignupJoinFitoday.isUserInteractionEnabled = true
+        self.btnSignupJoinFitoday.addGestureRecognizer(joinFitodayClickGesture)
         // Do any additional setup after loading the view.
     }
     
-    @objc func someAction(_ sender:UITapGestureRecognizer)
+    @objc func onLoginWithEmailClicked(_ sender:UITapGestureRecognizer)
     {
         let vc = LoginViewController()
+        vc.isJoinFitoday = false
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func onLoginWithFacebookClicked(_ sender:UITapGestureRecognizer)
+    {
+        let vc = LoginViewController()
+        vc.isJoinFitoday = false
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func onLoginWithGmailClicked(_ sender:UITapGestureRecognizer)
+    {
+        let vc = LoginViewController()
+        vc.isJoinFitoday = false
+        vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    @objc func onJoinFitodayClicked(_ sender:UITapGestureRecognizer)
+    {
+        let vc = LoginViewController()
+        vc.isJoinFitoday = true
         vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
         self.present(vc, animated: true, completion: nil)
     }

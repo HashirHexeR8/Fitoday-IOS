@@ -80,3 +80,48 @@ class FitodayTextField: UITextField {
         return CGRect(x: bounds.origin.x + padding, y: bounds.origin.y, width: bounds.width - padding * 2, height: bounds.height)
     }
 }
+
+let kUncheckedImage = UIImage(named: "CheckBoxUnselected")!
+let kCheckedImage = UIImage(named: "CheckBoxSelected")!      // Could be replaced by a green checkmark !
+
+@IBDesignable
+class CheckBox: UIButton {
+    @IBInspectable public var isChecked: Bool = false
+
+    @IBInspectable public var image: UIImage?
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        image = kUncheckedImage
+    }
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    override func draw(_ rect: CGRect) {
+//        if isChecked == true {
+//                self.setImage(kCheckedImage, for: UIControl.State.normal)
+//        } else {
+//            self.setImage(kUncheckedImage, for: UIControl.State.normal)
+//        }
+//        image?.draw(in: rect)
+    }
+
+    override func awakeFromNib() {
+        self.addTarget(self, action:#selector(buttonClicked(sender:)), for: UIControl.Event.touchUpInside)
+    }
+
+    @objc func buttonClicked(sender: UIButton) {
+    
+        if sender == self {
+            isChecked = !isChecked
+            if isChecked == true {
+                    self.setImage(kCheckedImage, for: UIControl.State.normal)
+            } else {
+                self.setImage(kUncheckedImage, for: UIControl.State.normal)
+            }
+        }
+    }
+
+}
