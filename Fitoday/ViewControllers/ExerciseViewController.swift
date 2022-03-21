@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExerciseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ExerciseViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var exerciseParentTableView: UITableView!
@@ -73,6 +73,14 @@ class ExerciseViewController: UIViewController, UITableViewDelegate, UITableView
             cell.initCell(itemDTO: itemsList[indexPath.row - 2])
             
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 5 {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "JumpingRopes", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "JumpingRopeLandingViewController") as! JumpingRopeLandingViewController
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 

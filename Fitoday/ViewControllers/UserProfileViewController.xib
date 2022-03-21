@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserProfileViewController" customModule="Fitoday" customModuleProvider="target">
             <connections>
@@ -85,21 +90,29 @@
                                 <constraint firstAttribute="bottom" secondItem="4U4-KS-CNZ" secondAttribute="bottom" constant="3" id="sfT-6K-03q"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abV-H4-MYJ">
+                            <rect key="frame" x="152.5" y="203" width="109" height="23"/>
+                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cAZ-cY-52J">
-                            <rect key="frame" x="10" y="210" width="394" height="593"/>
+                            <rect key="frame" x="10" y="231" width="394" height="572"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="bS7-e5-M60" firstAttribute="leading" secondItem="utf-7m-vXW" secondAttribute="leading" constant="5" id="18Q-x6-jue"/>
-                        <constraint firstItem="cAZ-cY-52J" firstAttribute="top" secondItem="F2x-lu-MEA" secondAttribute="bottom" constant="15" id="5Xt-Nx-Q25"/>
                         <constraint firstAttribute="trailing" secondItem="bS7-e5-M60" secondAttribute="trailing" constant="5" id="7r3-cg-HdI"/>
+                        <constraint firstItem="cAZ-cY-52J" firstAttribute="top" secondItem="abV-H4-MYJ" secondAttribute="bottom" constant="5" id="9iO-3p-kVu"/>
                         <constraint firstAttribute="trailing" secondItem="cAZ-cY-52J" secondAttribute="trailing" constant="10" id="IDS-ya-v3G"/>
-                        <constraint firstItem="F2x-lu-MEA" firstAttribute="top" secondItem="bS7-e5-M60" secondAttribute="bottom" constant="5" id="OhU-M2-YLN"/>
                         <constraint firstItem="cAZ-cY-52J" firstAttribute="leading" secondItem="utf-7m-vXW" secondAttribute="leading" constant="10" id="TdI-Yv-KhA"/>
                         <constraint firstItem="bS7-e5-M60" firstAttribute="top" secondItem="utf-7m-vXW" secondAttribute="top" constant="5" id="U0Y-tR-I9H"/>
                         <constraint firstAttribute="bottom" secondItem="cAZ-cY-52J" secondAttribute="bottom" constant="15" id="UtO-X1-Ks3"/>
+                        <constraint firstItem="abV-H4-MYJ" firstAttribute="centerX" secondItem="utf-7m-vXW" secondAttribute="centerX" id="ck4-oH-9KV"/>
+                        <constraint firstItem="abV-H4-MYJ" firstAttribute="top" secondItem="F2x-lu-MEA" secondAttribute="bottom" constant="8" id="pli-ge-KWc"/>
+                        <constraint firstItem="F2x-lu-MEA" firstAttribute="top" secondItem="bS7-e5-M60" secondAttribute="bottom" constant="5" id="t6e-8S-7t5"/>
                         <constraint firstItem="F2x-lu-MEA" firstAttribute="centerX" secondItem="utf-7m-vXW" secondAttribute="centerX" id="ui7-0d-37I"/>
                     </constraints>
                 </view>
@@ -112,7 +125,7 @@
                 <constraint firstItem="utf-7m-vXW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d0K-Xz-eqg"/>
                 <constraint firstItem="utf-7m-vXW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fQf-v7-UgC"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="98"/>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </view>
     </objects>
     <resources>

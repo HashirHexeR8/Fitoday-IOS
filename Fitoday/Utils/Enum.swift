@@ -37,3 +37,11 @@ public enum exerciseItemType: String {
     
     
 }
+
+
+public enum jumpMode: Int {
+    case freeJumpMode = 1
+    case timerMode = 2
+    case countdownMode = 3
+    case targetMode = 4
+}

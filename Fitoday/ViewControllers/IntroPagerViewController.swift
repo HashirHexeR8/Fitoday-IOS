@@ -54,6 +54,7 @@ class IntroPagerViewController: UIViewController {
         }
         
         self.introInfoLabel.font = UIFont(name: "Comfortaa-bold", size: 20.0)
+        self.introInfoLabel.font = self.introInfoLabel.font.withSize(19)
         self.introInfoLabel.textAlignment = .center
 
         // Do any additional setup after loading the view.

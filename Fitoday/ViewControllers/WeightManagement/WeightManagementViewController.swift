@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeightManagementViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeightManagementViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     private let headerCellIdentifier = "WeightManagementHeaderTableViewCell"
     private let bottomCellIdentifier = "WeightManagementBottomTableViewCell"
@@ -51,6 +51,13 @@ class WeightManagementViewController: UIViewController, UITableViewDelegate, UIT
         else if indexPath.row == 1 {
             let cell = weightManagementTableView?.dequeueReusableCell(withIdentifier: bottomCellIdentifier) as! WeightManagementBottomTableViewCell
             cell.selectionStyle = .none
+            
+            cell.onEditGoalClick = { [unowned self] in
+                let storyBoard: UIStoryboard = UIStoryboard(name: "WeightManagement", bundle: nil)
+                let viewController = storyBoard.instantiateViewController(withIdentifier: "NewWeightGoalSetViewController") as! NewWeightGoalSetViewController
+                self.navigationController?.pushViewController(viewController, animated: true)
+                
+            }
             return cell
         }
         else {

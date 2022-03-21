@@ -18,9 +18,25 @@ class UserProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var secondItemTitleKey: UILabel?
     @IBOutlet weak var secondItemValue: UILabel?
     @IBOutlet weak var profileItemSeparator: UIView?
+    @IBOutlet weak var profileFirstItemValueContainer: UIView!
+    @IBOutlet weak var profileSecondItemValueContainer: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // Shadow Color and Radius
+        self.profileFirstItemValueContainer.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.profileFirstItemValueContainer.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        self.profileFirstItemValueContainer.layer.shadowOpacity = 1.0
+        self.profileFirstItemValueContainer.layer.shadowRadius = 0.0
+        self.profileFirstItemValueContainer.layer.masksToBounds = false
+        
+        self.profileSecondItemValueContainer.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.profileSecondItemValueContainer.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        self.profileSecondItemValueContainer.layer.shadowOpacity = 1.0
+        self.profileSecondItemValueContainer.layer.shadowRadius = 0.0
+        self.profileSecondItemValueContainer.layer.masksToBounds = false
+        // Do any additional setup after loading the view.
         // Initialization code
     }
     

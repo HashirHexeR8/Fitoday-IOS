@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JumpingRopesLandingHeaderTableViewCell" customModule="Fitoday" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULC-ym-oRo">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ah-uM-ZK9">
+                                <rect key="frame" x="0.0" y="15" width="450" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geq-6X-2cD" userLabel="JumpRopesBackButton">
+                                        <rect key="frame" x="15" y="9" width="16" height="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="BackButtonWhite">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JumpingRopesTopBarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vFc-wd-MkQ">
+                                        <rect key="frame" x="46" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="HyT-Cy-PPg"/>
+                                            <constraint firstAttribute="width" constant="20" id="ogE-XG-Kpm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Jumping Rope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-E5-Clc">
+                                        <rect key="frame" x="126" y="9.5" width="198.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-OF-tHh" userLabel="JumpRopesExpandButton">
+                                        <rect key="frame" x="417" y="12.5" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="EBA-BT-CUJ"/>
+                                            <constraint firstAttribute="height" constant="15" id="s8t-m8-usN"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="TopBarExapndIcon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCD-yg-dud" userLabel="JumpRopesSettingsButton">
+                                        <rect key="frame" x="387" y="12.5" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Cro-TA-4zA"/>
+                                            <constraint firstAttribute="width" constant="15" id="sN3-9j-Fby"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="SettingsWhiteIcon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xar-E5-Clc" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="Ehg-lr-v9O"/>
+                                    <constraint firstItem="LCD-yg-dud" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="Gr0-0B-i1B"/>
+                                    <constraint firstAttribute="trailing" secondItem="FRc-OF-tHh" secondAttribute="trailing" constant="18" id="Jfo-Dy-wRW"/>
+                                    <constraint firstAttribute="height" constant="40" id="RR9-GI-h1B"/>
+                                    <constraint firstItem="vFc-wd-MkQ" firstAttribute="leading" secondItem="geq-6X-2cD" secondAttribute="trailing" constant="15" id="UBw-pL-tVk"/>
+                                    <constraint firstItem="FRc-OF-tHh" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="Xsu-Fc-qcj"/>
+                                    <constraint firstItem="geq-6X-2cD" firstAttribute="leading" secondItem="0Ah-uM-ZK9" secondAttribute="leading" constant="15" id="YIP-Ms-N4o"/>
+                                    <constraint firstItem="Xar-E5-Clc" firstAttribute="centerX" secondItem="0Ah-uM-ZK9" secondAttribute="centerX" id="eW7-Rc-8sS"/>
+                                    <constraint firstItem="vFc-wd-MkQ" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="jzD-sP-ppI"/>
+                                    <constraint firstItem="geq-6X-2cD" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="oUY-jB-Glx"/>
+                                    <constraint firstItem="FRc-OF-tHh" firstAttribute="leading" secondItem="LCD-yg-dud" secondAttribute="trailing" constant="15" id="zEE-GB-xDR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czI-FF-v9I" userLabel="TotalStepsCountLabel">
+                                <rect key="frame" x="194" y="141.5" width="62" height="67"/>
+                                <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2i8-t8-W5Y">
+                                <rect key="frame" x="0.0" y="275" width="450" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Burned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHn-8m-XCg">
+                                        <rect key="frame" x="20" y="43" width="85" height="12"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZA-Zl-yVa">
+                                        <rect key="frame" x="198" y="43" width="54" height="12"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Jumps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehf-Tg-T4i">
+                                        <rect key="frame" x="366.5" y="43" width="63.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="112" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXv-5l-w5P" userLabel="TotalJumpsLabel">
+                                        <rect key="frame" x="386.5" y="19" width="23.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-ee-YeB" userLabel="TotalTimeElapsedLabel">
+                                        <rect key="frame" x="203.5" y="19" width="43" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4V-FV-b62" userLabel="TotalCaloriesBurnedLabel">
+                                        <rect key="frame" x="20" y="19" width="27" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDx-DW-0lN">
+                                        <rect key="frame" x="51" y="20" width="21" height="17"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OHn-8m-XCg" firstAttribute="top" secondItem="Y4V-FV-b62" secondAttribute="bottom" constant="5" id="0Ia-kF-D9g"/>
+                                    <constraint firstAttribute="trailing" secondItem="AXv-5l-w5P" secondAttribute="trailing" constant="40" id="88X-Yi-v6Q"/>
+                                    <constraint firstItem="zZA-Zl-yVa" firstAttribute="centerX" secondItem="8kX-ee-YeB" secondAttribute="centerX" id="ARw-mb-zZv"/>
+                                    <constraint firstItem="ehf-Tg-T4i" firstAttribute="baseline" secondItem="zZA-Zl-yVa" secondAttribute="baseline" id="ArS-uq-yLQ"/>
+                                    <constraint firstAttribute="height" constant="75" id="L3A-z2-EkL"/>
+                                    <constraint firstItem="zZA-Zl-yVa" firstAttribute="top" secondItem="8kX-ee-YeB" secondAttribute="bottom" constant="5" id="WqJ-17-snX"/>
+                                    <constraint firstItem="OHn-8m-XCg" firstAttribute="leading" secondItem="2i8-t8-W5Y" secondAttribute="leading" constant="20" id="ao3-CI-MMu"/>
+                                    <constraint firstItem="uDx-DW-0lN" firstAttribute="leading" secondItem="Y4V-FV-b62" secondAttribute="trailing" constant="4" id="deE-Ft-xN4"/>
+                                    <constraint firstAttribute="bottom" secondItem="zZA-Zl-yVa" secondAttribute="bottom" constant="20" id="kR4-67-2hz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ehf-Tg-T4i" secondAttribute="trailing" constant="20" id="nv7-c1-bq8"/>
+                                    <constraint firstItem="OHn-8m-XCg" firstAttribute="leading" secondItem="Y4V-FV-b62" secondAttribute="leading" id="rqa-pA-pjN"/>
+                                    <constraint firstItem="ehf-Tg-T4i" firstAttribute="top" secondItem="AXv-5l-w5P" secondAttribute="bottom" constant="5" id="sKh-H3-KsT"/>
+                                    <constraint firstAttribute="bottom" secondItem="OHn-8m-XCg" secondAttribute="bottom" constant="20" id="tHJ-BD-7RE"/>
+                                    <constraint firstItem="zZA-Zl-yVa" firstAttribute="centerX" secondItem="2i8-t8-W5Y" secondAttribute="centerX" id="tpR-yw-t6G"/>
+                                    <constraint firstItem="OHn-8m-XCg" firstAttribute="top" secondItem="uDx-DW-0lN" secondAttribute="bottom" constant="6" id="ucS-86-RTH"/>
+                                    <constraint firstItem="uDx-DW-0lN" firstAttribute="centerY" secondItem="Y4V-FV-b62" secondAttribute="centerY" id="zZd-Y6-V6x"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Ah-uM-ZK9" firstAttribute="top" secondItem="ULC-ym-oRo" secondAttribute="top" constant="15" id="6r4-F4-baA"/>
+                            <constraint firstItem="czI-FF-v9I" firstAttribute="centerX" secondItem="ULC-ym-oRo" secondAttribute="centerX" id="P5R-39-Ky4"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ah-uM-ZK9" secondAttribute="trailing" id="RdM-yo-WB1"/>
+                            <constraint firstItem="czI-FF-v9I" firstAttribute="centerY" secondItem="ULC-ym-oRo" secondAttribute="centerY" id="VYy-mk-sic"/>
+                            <constraint firstAttribute="bottom" secondItem="2i8-t8-W5Y" secondAttribute="bottom" id="dZu-r2-7F0"/>
+                            <constraint firstItem="2i8-t8-W5Y" firstAttribute="leading" secondItem="ULC-ym-oRo" secondAttribute="leading" id="g4m-1R-yr4"/>
+                            <constraint firstAttribute="trailing" secondItem="2i8-t8-W5Y" secondAttribute="trailing" id="g6L-Nu-3zR"/>
+                            <constraint firstItem="0Ah-uM-ZK9" firstAttribute="leading" secondItem="ULC-ym-oRo" secondAttribute="leading" id="vw0-q5-Kay"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ULC-ym-oRo" secondAttribute="trailing" id="0Wq-HV-olV"/>
+                    <constraint firstAttribute="bottom" secondItem="ULC-ym-oRo" secondAttribute="bottom" id="Hrr-xe-4bE"/>
+                    <constraint firstItem="ULC-ym-oRo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="URZ-Jy-XhI"/>
+                    <constraint firstItem="ULC-ym-oRo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jYH-ha-6bi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="totalJumpsCalloriesBurned" destination="Y4V-FV-b62" id="Mh7-z8-SPZ"/>
+                <outlet property="totalJumpsCount" destination="czI-FF-v9I" id="D3x-NS-dgn"/>
+                <outlet property="totalJumpsCountHistory" destination="AXv-5l-w5P" id="c7f-Ud-qq9"/>
+                <outlet property="totalJumpsTime" destination="8kX-ee-YeB" id="bb8-YC-ffE"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="59.598214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BackButtonWhite" width="16" height="14.5"/>
+        <image name="JumpingRopesTopBarIcon" width="25" height="23.5"/>
+        <image name="SettingsWhiteIcon" width="18" height="19"/>
+        <image name="TopBarExapndIcon" width="15" height="15"/>
+    </resources>
+</document>

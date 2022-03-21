@@ -7,6 +7,7 @@ target 'Fitoday' do
   
   pod 'DLRadioButton', '~> 1.4'
   pod 'KDCircularProgress'
+  pod 'Charts'
 
   # Pods for Fitoday
 

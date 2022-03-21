@@ -8,6 +8,8 @@
 import UIKit
 
 class WeightManagementBottomTableViewCell: UITableViewCell {
+    
+    var onEditGoalClick: (() -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,6 +20,10 @@ class WeightManagementBottomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func onEditGoalPressed(_ sender: UIButton) {
+        self.onEditGoalClick?()
     }
     
 }

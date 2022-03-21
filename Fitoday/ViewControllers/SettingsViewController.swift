@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SettingsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     let settingsCellIdentifier = "SettingsItemCellView"
     let settingsShopCellIdentifier = "SettingsShopFitodayCellView"
@@ -58,6 +58,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
             
             return cell
         }
+    }
+    
+    @IBAction func onBackButtonClicked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     

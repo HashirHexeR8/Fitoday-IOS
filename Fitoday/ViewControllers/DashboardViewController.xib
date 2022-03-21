@@ -4,86 +4,19 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="Fitoday" customModuleProvider="target">
-            <connections>
-                <outlet property="deviceTabBarItem" destination="6hV-Jx-ZVq" id="wzy-sQ-HLz"/>
-                <outlet property="homeTabBarItem" destination="hOf-R0-kN3" id="bdn-d6-XCF"/>
-                <outlet property="profileTabBarItem" destination="PAr-rz-mr9" id="clQ-kr-WD3"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="Fitoday" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tabBarController id="pKF-Ta-Fyt">
-            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBb-wf-CzI">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zBb-wf-CzI">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             </tabBar>
-            <viewControllers>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="jEt-SV-RV0">
-                    <view key="view" contentMode="scaleToFill" id="hDI-lc-5Ly">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <viewLayoutGuide key="safeArea" id="MHL-ta-SgT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="BottomBarHomeIcon" selectedImage="BottomBarHomeIcon" id="hOf-R0-kN3">
-                        <color key="badgeColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                </viewController>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="R3d-us-0jD">
-                    <view key="view" contentMode="scaleToFill" id="yIH-eF-F0L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1hF-XP-fp2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Exercise" image="BottomBarExerciseIconUnselected" selectedImage="ExerciseSelectedIcon" id="K0h-1E-Qdc"/>
-                    <toolbarItems/>
-                </viewController>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="rgD-56-f93">
-                    <view key="view" contentMode="scaleToFill" id="spK-eR-Mmg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <viewLayoutGuide key="safeArea" id="o4f-YS-fYD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Devices" image="BottomBarDevicesUnselected" selectedImage="BottomBarDevicesIconSelected" id="6hV-Jx-ZVq">
-                        <color key="badgeColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                </viewController>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="kY1-Ma-oIu">
-                    <view key="view" contentMode="scaleToFill" id="xoT-TQ-ds5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Fd7-ee-8D4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="BottomBarProfileIconUnSelected" selectedImage="BottomBarProfileSelectedIcon" id="PAr-rz-mr9">
-                        <color key="badgeColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                </viewController>
-            </viewControllers>
             <point key="canvasLocation" x="1089" y="56"/>
         </tabBarController>
     </objects>
-    <resources>
-        <image name="BottomBarDevicesIconSelected" width="17.5" height="22"/>
-        <image name="BottomBarDevicesUnselected" width="17.5" height="22"/>
-        <image name="BottomBarExerciseIconUnselected" width="21.5" height="21.5"/>
-        <image name="BottomBarHomeIcon" width="28" height="28"/>
-        <image name="BottomBarProfileIconUnSelected" width="21" height="21"/>
-        <image name="BottomBarProfileSelectedIcon" width="21" height="21"/>
-        <image name="ExerciseSelectedIcon" width="19" height="19"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

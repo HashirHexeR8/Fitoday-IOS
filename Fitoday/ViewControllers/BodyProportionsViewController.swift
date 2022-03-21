@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BodyProportionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class BodyProportionsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     let headerCellIdentifier = "BodyProportionsHeaderTableViewCell"
     let bottomCellView = "BodyProportionsBottomCellView"

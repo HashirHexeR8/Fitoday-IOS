@@ -8,7 +8,7 @@
 import UIKit
 import KDCircularProgress
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     let headerCellIdentifier = "HomeHeaderTableViewCell"
     let listItemCellView = "ExerciseItemsTableViewCell"
@@ -21,6 +21,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         tableView?.delegate = self
         tableView?.dataSource = self
@@ -62,6 +63,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: headerCellIdentifier) as! HomeHeaderTableViewCell
             cell.selectionStyle = .none
             
+            cell.onSettingsButtonClicked = { [unowned self] in
+                self.navigationController?.pushViewController(SettingsViewController(), animated: true)
+            }
+            
             return cell
         }
         else {
@@ -75,11 +80,14 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 1 {
-            let viewController = WeightManagementViewController()
-            viewController.modalPresentationStyle = .fullScreen
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "WeightManagement", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "WeightManagementViewController") as! WeightManagementViewController
             self.navigationController?.pushViewController(viewController, animated: true)
+            
         }
         else if indexPath.row == 2 {
+
             let viewController = BodyProportionsViewController()
             viewController.modalPresentationStyle = .fullScreen
             self.navigationController?.pushViewController(viewController, animated: true)

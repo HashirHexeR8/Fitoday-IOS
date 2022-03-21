@@ -52,6 +52,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="HomeSettings"/>
+                                        <connections>
+                                            <action selector="onSettingsButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AY4-Hv-Xke"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePictureDefaultPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="SV0-rX-6Id">
                                         <rect key="frame" x="25" y="9.5" width="41" height="41"/>

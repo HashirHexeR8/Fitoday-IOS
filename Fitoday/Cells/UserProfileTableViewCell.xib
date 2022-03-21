@@ -28,10 +28,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="teF-E2-bWs">
-                        <rect key="frame" x="5" y="5" width="450" height="140"/>
+                        <rect key="frame" x="5" y="5" width="460" height="140"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yna-Ji-ax6">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="460" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E1-el-ILq" userLabel="lblProfileCellTitle">
                                         <rect key="frame" x="20" y="20" width="97" height="20.5"/>
@@ -48,13 +48,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2i-Zv-fDY" userLabel="DataView">
-                                <rect key="frame" x="5" y="49.5" width="440" height="80"/>
+                                <rect key="frame" x="5" y="49.5" width="450" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PNz-TX-dSY" userLabel="firstItemStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITD-85-yJt" userLabel="FirstTitleView">
-                                                <rect key="frame" x="0.0" y="0.0" width="180" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="259" height="20"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-Zo-oRr">
                                                         <rect key="frame" x="15" y="3.5" width="76" height="13"/>
@@ -78,13 +78,12 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="1Nh-UY-ewF"/>
-                                                    <constraint firstAttribute="width" constant="180" id="3dc-Tf-rUR"/>
                                                     <constraint firstItem="qFX-Zo-oRr" firstAttribute="leading" secondItem="ITD-85-yJt" secondAttribute="leading" constant="15" id="9Ga-u3-JKQ"/>
                                                     <constraint firstItem="qFX-Zo-oRr" firstAttribute="top" secondItem="ITD-85-yJt" secondAttribute="top" constant="3.5" id="X4I-2H-uzZ"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9x-VZ-30k" userLabel="ProfileItemFirstValueContainer">
-                                                <rect key="frame" x="0.0" y="25" width="180" height="55"/>
+                                                <rect key="frame" x="0.0" y="25" width="259" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-TL-kqU">
                                                         <rect key="frame" x="25" y="16" width="59.5" height="18"/>
@@ -97,7 +96,6 @@
                                                 <constraints>
                                                     <constraint firstItem="Tqe-TL-kqU" firstAttribute="leading" secondItem="c9x-VZ-30k" secondAttribute="leading" constant="25" id="MaE-Ut-h1O"/>
                                                     <constraint firstItem="Tqe-TL-kqU" firstAttribute="top" secondItem="c9x-VZ-30k" secondAttribute="top" constant="16" id="c78-ZM-0pI"/>
-                                                    <constraint firstAttribute="width" constant="180" id="msh-F0-rz6"/>
                                                     <constraint firstAttribute="height" constant="55" id="pwH-NM-y2P"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
@@ -108,8 +106,15 @@
                                             </view>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJa-Tk-SrY" userLabel="CenterSeparator">
+                                        <rect key="frame" x="264" y="0.0" width="1" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="tIT-8p-DEw"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aPo-VC-0c0" userLabel="secondItemStack">
-                                        <rect key="frame" x="260" y="0.0" width="180" height="80"/>
+                                        <rect key="frame" x="270" y="0.0" width="180" height="80"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTt-hR-Tqj" userLabel="SecondTitleView">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="20"/>
@@ -141,7 +146,7 @@
                                                     <constraint firstAttribute="width" constant="180" id="kVI-xn-G6l"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-Lj-8yJ" userLabel="ProfileItemSecondValue">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-Lj-8yJ" userLabel="ProfileItemSecondValue">
                                                 <rect key="frame" x="0.0" y="25" width="180" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sep, 4, 1990" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk3-L2-7ay">
@@ -169,17 +174,22 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="TJa-Tk-SrY" firstAttribute="top" secondItem="p2i-Zv-fDY" secondAttribute="top" id="NR8-oR-2xR"/>
+                                    <constraint firstAttribute="bottom" secondItem="TJa-Tk-SrY" secondAttribute="bottom" id="S7E-Eb-LQA"/>
                                     <constraint firstAttribute="bottom" secondItem="PNz-TX-dSY" secondAttribute="bottom" id="S8o-yM-9H2"/>
+                                    <constraint firstItem="TJa-Tk-SrY" firstAttribute="leading" secondItem="PNz-TX-dSY" secondAttribute="trailing" constant="5" id="VgI-aY-SuD"/>
                                     <constraint firstItem="PNz-TX-dSY" firstAttribute="top" secondItem="p2i-Zv-fDY" secondAttribute="top" id="Xqa-OT-dL1"/>
+                                    <constraint firstItem="aPo-VC-0c0" firstAttribute="leading" secondItem="TJa-Tk-SrY" secondAttribute="trailing" constant="5" id="b9O-Js-Tpc"/>
                                     <constraint firstItem="PNz-TX-dSY" firstAttribute="leading" secondItem="p2i-Zv-fDY" secondAttribute="leading" id="e5K-11-Xmn"/>
                                     <constraint firstAttribute="bottom" secondItem="aPo-VC-0c0" secondAttribute="bottom" id="ggR-1a-xpY"/>
                                     <constraint firstAttribute="height" constant="80" id="h89-6C-iOT"/>
                                     <constraint firstAttribute="trailing" secondItem="aPo-VC-0c0" secondAttribute="trailing" id="iQW-lo-eVq"/>
                                     <constraint firstItem="aPo-VC-0c0" firstAttribute="top" secondItem="p2i-Zv-fDY" secondAttribute="top" id="lW5-5G-hzo"/>
+                                    <constraint firstItem="TJa-Tk-SrY" firstAttribute="centerX" secondItem="p2i-Zv-fDY" secondAttribute="centerX" id="vb7-e3-Wdz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3X-1y-BPf" userLabel="viewProfileCellSeparator">
-                                <rect key="frame" x="15" y="139" width="420" height="1"/>
+                                <rect key="frame" x="15" y="139" width="430" height="1"/>
                                 <color key="backgroundColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="0.26078351759752688" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="FPc-BT-3wQ"/>
@@ -210,9 +220,11 @@
                 <outlet property="firstItemTitleIcon" destination="91E-kj-fP1" id="jNL-mW-dbZ"/>
                 <outlet property="firstItemTitleKey" destination="wUQ-i5-fdi" id="abl-66-yN6"/>
                 <outlet property="firstItemValue" destination="Tqe-TL-kqU" id="TW2-CX-Tin"/>
+                <outlet property="profileFirstItemValueContainer" destination="c9x-VZ-30k" id="abd-hP-j5i"/>
                 <outlet property="profileItemSeparator" destination="v3X-1y-BPf" id="hk6-Pn-v9c"/>
                 <outlet property="profileItemTitle" destination="yna-Ji-ax6" id="2SW-Pc-jrH"/>
                 <outlet property="profileItemTitleLabel" destination="5E1-el-ILq" id="rNM-Eb-5Nz"/>
+                <outlet property="profileSecondItemValueContainer" destination="cBr-Lj-8yJ" id="k75-yJ-H5Q"/>
                 <outlet property="secondItemTitleIcon" destination="v01-Qe-bQ8" id="wjE-CN-N7E"/>
                 <outlet property="secondItemTitleKey" destination="QCT-BG-EES" id="4fM-tG-Pmq"/>
                 <outlet property="secondItemValue" destination="gk3-L2-7ay" id="Mna-lG-bBp"/>

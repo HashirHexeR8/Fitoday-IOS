@@ -7,17 +7,21 @@
 
 import UIKit
 
-class ShopDevicesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
+class ShopDevicesViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
     @IBOutlet weak var shopDevicesTableView: UITableView!
     @IBOutlet weak var connectedDevicesCollectionView: UICollectionView!
+    @IBOutlet weak var bannerDevicesCollectionView: UICollectionView!
+
 
     
     private var deviceDataSource: [ShopDeciceItemInfoDTO] = []
     
     let cellIdentifier = "ShopDeviceTableViewCell"
     let connectedDeviceCellIdentifier = "ConnectedDeviceCollectionViewCell"
+    let bannerDeviceCellIdentifier = "DeviceBannerCollectionViewCell"
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +30,17 @@ class ShopDevicesViewController: UIViewController, UITableViewDelegate, UITableV
         shopDevicesTableView?.register(nib, forCellReuseIdentifier: cellIdentifier)
         let connectedDeviceNib = UINib(nibName: connectedDeviceCellIdentifier, bundle: nil)
         connectedDevicesCollectionView?.register(connectedDeviceNib, forCellWithReuseIdentifier: connectedDeviceCellIdentifier)
+        let bannerDeviceNib = UINib(nibName: bannerDeviceCellIdentifier, bundle: nil)
+        bannerDevicesCollectionView?.register(bannerDeviceNib, forCellWithReuseIdentifier: bannerDeviceCellIdentifier)
         
         shopDevicesTableView?.delegate = self
         shopDevicesTableView?.dataSource = self
         
         connectedDevicesCollectionView?.delegate = self
         connectedDevicesCollectionView?.dataSource = self
+        
+        bannerDevicesCollectionView?.delegate = self
+        bannerDevicesCollectionView?.dataSource = self
         
         
         let smartWeight = ShopDeciceItemInfoDTO(itemName: "Fitody Smart Scale", itemDescription: "Full Body Composition Including Body Fat, BMI, Water Percentage, Muscle & Bone Mass", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "WeightScaleIcon")
@@ -65,10 +74,27 @@ class ShopDevicesViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = connectedDevicesCollectionView?.dequeueReusableCell(withReuseIdentifier: connectedDeviceCellIdentifier, for: indexPath) as! ConnectedDeviceCollectionViewCell
-            
-        return cell
+        if collectionView == bannerDevicesCollectionView {
+            let cell = bannerDevicesCollectionView?.dequeueReusableCell(withReuseIdentifier: bannerDeviceCellIdentifier, for: indexPath) as! DeviceBannerCollectionViewCell
+                
+            return cell
+        }
+        else {
+            let cell = connectedDevicesCollectionView?.dequeueReusableCell(withReuseIdentifier: connectedDeviceCellIdentifier, for: indexPath) as! ConnectedDeviceCollectionViewCell
+                
+            return cell
+        }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == bannerDevicesCollectionView {
+            return CGSize(width: bannerDevicesCollectionView.frame.width, height: bannerDevicesCollectionView.frame.height)
+        }
+        else {
+            return CGSize(width: connectedDevicesCollectionView.frame.width/3, height: connectedDevicesCollectionView.frame.height)
+        }
+    }
+    
 
 
     /*

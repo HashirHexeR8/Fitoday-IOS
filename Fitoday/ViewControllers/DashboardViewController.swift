@@ -8,14 +8,15 @@
 import UIKit
 
 class DashboardViewController: UITabBarController, UITabBarControllerDelegate {
-    
-    @IBOutlet weak var homeTabBarItem: UITabBarItem!
-    @IBOutlet weak var deviceTabBarItem: UITabBarItem!
-    @IBOutlet weak var profileTabBarItem: UITabBarItem!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        self.tabBar.backgroundColor = .white
+        self.tabBar.barTintColor = .white
         
         delegate = self
         
@@ -27,7 +28,7 @@ class DashboardViewController: UITabBarController, UITabBarControllerDelegate {
         deviceTab.tabBarItem = UITabBarItem(title: "Device", image: UIImage(named: "BottomBarDevicesUnselected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage(named: "BottomBarDevicesIconSelected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
         let profileTab = UserProfileViewController()
         profileTab.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "BottomBarProfileIconUnSelected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), selectedImage: UIImage(named: "BottomBarProfileSelectedIcon")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
-        self.viewControllers = [homeTab, exerciseTab, deviceTab, profileTab]
+        self.viewControllers = [UINavigationController(rootViewController: homeTab), UINavigationController(rootViewController: exerciseTab), UINavigationController(rootViewController: deviceTab), UINavigationController(rootViewController: profileTab)]
         // Do any additional setup after loading the view.
     }
     

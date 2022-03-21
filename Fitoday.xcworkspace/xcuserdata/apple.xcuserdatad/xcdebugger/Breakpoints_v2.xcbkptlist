@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "9EB567CA-CE02-4FE4-85A9-044561A6F123"
+   uuid = "9505B0D8-A17C-4AA1-B100-FFD954C37162"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DB4AE261-90C1-4AE3-A8A6-464CAA957A68"
+            uuid = "BA2B2654-89F8-42CE-B23D-CA70027C1B26"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fitoday/StoryBoards/ViewController.swift"
+            filePath = "Fitoday/Cells/WeightManagementHeaderTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "onLoginWithEmailClicked(_:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AF1B0D74-0D4E-4F6A-8C62-1F2AA78D79AB"
+            uuid = "CE80E5BF-7A11-46DF-A788-26D2CE8C8E61"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fitoday/StoryBoards/ViewController.swift"
+            filePath = "Fitoday/Cells/WeightManagementHeaderTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "onLoginWithEmailClicked(_:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "42AF1C87-ECCA-4AE7-B637-2074A1759F01"
+            uuid = "6C38FF7C-9F6B-45D1-8A07-7ABBA770AD3E"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fitoday/StoryBoards/ViewController.swift"
+            filePath = "Fitoday/Cells/WeightManagementHeaderTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "onLoginWithEmailClicked(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3BEBFDBF-F6D1-4DAF-86DC-594A7A08ECB9"
+            uuid = "588AF4F1-6E5A-45B3-96A7-9E2C4EB3533F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Fitoday/StoryBoards/ViewController.swift"
+            filePath = "Fitoday/ViewControllers/SignUpViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>

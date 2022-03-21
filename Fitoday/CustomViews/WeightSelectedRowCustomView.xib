@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Light.ttf">
+            <string>Comfortaa-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeightSelectedRowCustomView" customModule="Fitoday" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomIndicator" destination="Es6-NY-WZP" id="gHn-mq-dvy"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="tuQ-J2-SpP"/>
+                <outlet property="label" destination="Gzq-n8-1Lc" id="LA1-N6-LZ9"/>
+                <outlet property="topIndicator" destination="3s8-Nb-GFa" id="PVK-bQ-hRV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s8-Nb-GFa" userLabel="TopIndicator">
+                    <rect key="frame" x="0.0" y="44" width="414" height="2"/>
+                    <color key="backgroundColor" red="0.54509803921568623" green="0.76862745098039209" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Maj-oB-Lzw"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Es6-NY-WZP" userLabel="ButtomIndicator">
+                    <rect key="frame" x="0.0" y="860" width="414" height="2"/>
+                    <color key="backgroundColor" red="0.5450980392" green="0.76862745099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="dMo-rd-vxU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Row" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gzq-n8-1Lc">
+                    <rect key="frame" x="0.0" y="46" width="414" height="814"/>
+                    <fontDescription key="fontDescription" name="Comfortaa-Light" family="Comfortaa" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Es6-NY-WZP" firstAttribute="top" secondItem="Gzq-n8-1Lc" secondAttribute="bottom" id="1d5-UB-IyW"/>
+                <constraint firstItem="Gzq-n8-1Lc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3Rr-uF-OTT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3s8-Nb-GFa" secondAttribute="trailing" id="7o3-2d-ND7"/>
+                <constraint firstItem="3s8-Nb-GFa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ajl-Sq-w0L"/>
+                <constraint firstItem="Es6-NY-WZP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F27-wk-baK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gzq-n8-1Lc" secondAttribute="trailing" id="MNK-ME-G4I"/>
+                <constraint firstAttribute="trailing" secondItem="Es6-NY-WZP" secondAttribute="trailing" id="RBs-Qk-1zo"/>
+                <constraint firstItem="Gzq-n8-1Lc" firstAttribute="top" secondItem="3s8-Nb-GFa" secondAttribute="bottom" id="ZZY-72-xms"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Es6-NY-WZP" secondAttribute="bottom" id="fqE-hl-0II"/>
+                <constraint firstItem="3s8-Nb-GFa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gRt-YJ-iGc"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

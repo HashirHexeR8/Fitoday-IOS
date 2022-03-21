@@ -10,6 +10,9 @@ import KDCircularProgress
 
 class HomeHeaderTableViewCell: UITableViewCell {
     
+    var onSettingsButtonClicked: (()->Void)?
+    var onNotificationsButtonClicked: (()->Void)?
+    
     @IBOutlet weak var circularCalorieView: UIView? = nil
     @IBOutlet weak var circularProgressView: KDCircularProgress? = nil
     @IBOutlet weak var circularStepsProgressView: KDCircularProgress? = nil
@@ -34,6 +37,10 @@ class HomeHeaderTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func onSettingsButtonAction(_ sender: UIButton!) {
+        self.onSettingsButtonClicked?()
     }
     
 }

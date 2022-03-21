@@ -66,6 +66,14 @@ class ViewController: UIViewController, UIPageViewControllerDelegate, UIPageView
         let joinFitodayClickGesture = UITapGestureRecognizer(target: self, action: #selector(self.onJoinFitodayClicked(_:)))
         self.btnSignupJoinFitoday.isUserInteractionEnabled = true
         self.btnSignupJoinFitoday.addGestureRecognizer(joinFitodayClickGesture)
+        
+        // Shadow Color and Radius
+        self.btnSignupJoinFitoday.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.btnSignupJoinFitoday.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        self.btnSignupJoinFitoday.layer.shadowOpacity = 1.0
+        self.btnSignupJoinFitoday.layer.shadowRadius = 0.0
+        self.btnSignupJoinFitoday.layer.masksToBounds = false
+        self.btnSignupJoinFitoday.layer.cornerRadius = 4.0
         // Do any additional setup after loading the view.
     }
     

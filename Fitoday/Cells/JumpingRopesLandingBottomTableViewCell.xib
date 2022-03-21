@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Light.ttf">
+            <string>Comfortaa-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JumpingRopesLandingBottomTableViewCell" customModule="Fitoday" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="650"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="650"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGz-b8-DJS" userLabel="JumpTopButtonSeparatorParentView">
+                        <rect key="frame" x="224.5" y="0.0" width="1" height="86.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8O-ut-O6r" userLabel="TopJumpModeButtonSeparator">
+                                <rect key="frame" x="0.0" y="20" width="1" height="40"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gs1-t0-tvI"/>
+                                    <constraint firstAttribute="width" constant="1" id="uPb-Lf-gff"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o8O-ut-O6r" firstAttribute="centerX" secondItem="DGz-b8-DJS" secondAttribute="centerX" id="2Vu-Zl-Fhp"/>
+                            <constraint firstAttribute="width" constant="1" id="5jk-9i-2T2"/>
+                            <constraint firstItem="o8O-ut-O6r" firstAttribute="top" secondItem="DGz-b8-DJS" secondAttribute="top" constant="20" id="ZfP-wN-IX8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free Jumping Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wG-1H-4L2">
+                        <rect key="frame" x="25" y="23" width="199.5" height="13.5"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FreeJumpModeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-1J-fdn">
+                        <rect key="frame" x="25" y="46.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="jUn-3A-iDF"/>
+                            <constraint firstAttribute="height" constant="30" id="nel-GR-eAy"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gat-bX-hQY">
+                        <rect key="frame" x="149.5" y="56.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HvJ-wl-MNb"/>
+                            <constraint firstAttribute="width" constant="60" id="hl6-kL-wmx"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="GO">
+                            <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                            <color key="baseBackgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onFreeJumpModeButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DaX-Hx-rfz"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jH5-V7-TpJ" userLabel="JumpModeTopButtonBottomSeparator">
+                        <rect key="frame" x="20" y="86.5" width="410" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="52d-qn-Dke"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U76-w1-Fu9">
+                        <rect key="frame" x="245.5" y="23" width="179.5" height="13.5"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimerModeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xt8-nc-VHF">
+                        <rect key="frame" x="245.5" y="46.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Ecp-Z2-FEB"/>
+                            <constraint firstAttribute="width" constant="30" id="i8B-Fu-M3P"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-t2-VT4">
+                        <rect key="frame" x="370" y="56.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="O2U-X9-pyt"/>
+                            <constraint firstAttribute="width" constant="60" id="p7v-d6-g6e"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="GO">
+                            <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                            <color key="baseBackgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onTimerModeButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="i4n-Oo-Zha"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vj1-WL-tcg" userLabel="JumpModeSecondButtonSeparatorParentView">
+                        <rect key="frame" x="224.5" y="87.5" width="1" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsz-X9-loL" userLabel="JumpModeSecondButtonSeparator">
+                                <rect key="frame" x="0.0" y="8" width="1" height="35"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8wk-6Y-gsy"/>
+                                    <constraint firstAttribute="width" constant="1" id="aIe-03-XWg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="7lE-OM-6w4"/>
+                            <constraint firstAttribute="trailing" secondItem="gsz-X9-loL" secondAttribute="trailing" id="D2Y-tz-gs9"/>
+                            <constraint firstItem="gsz-X9-loL" firstAttribute="top" secondItem="Vj1-WL-tcg" secondAttribute="top" constant="8" id="hrS-r9-0vn"/>
+                            <constraint firstAttribute="height" constant="70" id="jlq-8R-QYl"/>
+                            <constraint firstItem="gsz-X9-loL" firstAttribute="leading" secondItem="Vj1-WL-tcg" secondAttribute="leading" id="v8p-IT-Z38"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVB-AK-Kih">
+                        <rect key="frame" x="20" y="177.5" width="410" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="W4s-aQ-sPj"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2A-6H-fMb">
+                        <rect key="frame" x="370" y="136.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="kae-kd-XoP"/>
+                            <constraint firstAttribute="height" constant="20" id="lha-Yi-puf"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="GO">
+                            <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                            <color key="baseBackgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onTargetModeButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ssw-vj-YLR"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Countdown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5no-dw-Oxh">
+                        <rect key="frame" x="25" y="102.5" width="199.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAN-ss-zku">
+                        <rect key="frame" x="245.5" y="102.5" width="204.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CountdownModeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-Tn-dcO">
+                        <rect key="frame" x="25" y="126.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="k7X-MB-VuZ"/>
+                            <constraint firstAttribute="height" constant="30" id="xPC-Jm-SN2"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TargetModeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="znf-FE-B91">
+                        <rect key="frame" x="245.5" y="126.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="251-Of-vjH"/>
+                            <constraint firstAttribute="height" constant="30" id="ejZ-cq-G40"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LZ-Fp-Hnv">
+                        <rect key="frame" x="149.5" y="136.5" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XFO-Q1-oca"/>
+                            <constraint firstAttribute="width" constant="60" id="hWp-KK-yYl"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="GO">
+                            <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                            <color key="baseBackgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onCountdownModeButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MWy-pZ-Enc"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmartRopeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="DLc-Zg-dry">
+                        <rect key="frame" x="165" y="198.5" width="120" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Qp2-Ek-rYM"/>
+                            <constraint firstAttribute="width" constant="120" id="evZ-2p-ffK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitody Smart Jump Rope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-11-sFe">
+                        <rect key="frame" x="141" y="298.5" width="168" height="14.5"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Burn Fat, Boost Cardio, and Build Lean Muscle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDX-Kq-xry">
+                        <rect key="frame" x="120.5" y="318" width="209.5" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="210" id="0Qy-0L-ZCE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Comfortaa-Light" family="Comfortaa" pointSize="12"/>
+                        <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgX-n1-d4r">
+                        <rect key="frame" x="20" y="395.5" width="410" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pHQ-yZ-JCi"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CB-o4-cTU">
+                        <rect key="frame" x="173.5" y="347" width="103" height="28.5"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="SHOP NOW">
+                            <fontDescription key="titleFontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="13"/>
+                            <color key="baseForegroundColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jH5-V7-TpJ" firstAttribute="top" secondItem="xt8-nc-VHF" secondAttribute="bottom" constant="10" id="0Oy-pA-moI"/>
+                    <constraint firstItem="vVP-Tn-dcO" firstAttribute="top" secondItem="5no-dw-Oxh" secondAttribute="bottom" constant="10" id="1g9-qq-cg4"/>
+                    <constraint firstItem="bVB-AK-Kih" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2HS-ra-r7Q"/>
+                    <constraint firstItem="DGz-b8-DJS" firstAttribute="leading" secondItem="gat-bX-hQY" secondAttribute="trailing" constant="15" id="3P1-IV-TEe"/>
+                    <constraint firstItem="gat-bX-hQY" firstAttribute="bottom" secondItem="OGT-1J-fdn" secondAttribute="bottom" id="47X-QC-NlH"/>
+                    <constraint firstItem="DGz-b8-DJS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4PL-gU-MJf"/>
+                    <constraint firstItem="DGz-b8-DJS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5j7-3S-O4J"/>
+                    <constraint firstItem="NCe-11-sFe" firstAttribute="top" secondItem="DLc-Zg-dry" secondAttribute="bottom" id="6F9-la-u0x"/>
+                    <constraint firstItem="jH5-V7-TpJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6R2-Zq-bPG"/>
+                    <constraint firstItem="U76-w1-Fu9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="DZ6-CH-mSf"/>
+                    <constraint firstAttribute="trailing" secondItem="U76-w1-Fu9" secondAttribute="trailing" constant="25" id="EeB-d0-8xL"/>
+                    <constraint firstItem="xt8-nc-VHF" firstAttribute="top" secondItem="U76-w1-Fu9" secondAttribute="bottom" constant="10" id="HHv-ii-Cy5"/>
+                    <constraint firstItem="OGT-1J-fdn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Hbv-se-Url"/>
+                    <constraint firstItem="1CB-o4-cTU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="IZs-eV-EYI"/>
+                    <constraint firstItem="jgX-n1-d4r" firstAttribute="top" secondItem="1CB-o4-cTU" secondAttribute="bottom" constant="20" id="IzH-O0-4AV"/>
+                    <constraint firstItem="znf-FE-B91" firstAttribute="top" secondItem="jAN-ss-zku" secondAttribute="bottom" constant="10" id="Lq7-XE-0WC"/>
+                    <constraint firstItem="RDX-Kq-xry" firstAttribute="centerX" secondItem="DLc-Zg-dry" secondAttribute="centerX" id="LuD-cs-863"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jgX-n1-d4r" secondAttribute="trailing" id="MJn-o8-UMP"/>
+                    <constraint firstItem="DLc-Zg-dry" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="N76-1H-djw"/>
+                    <constraint firstItem="Vj1-WL-tcg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="PZ5-wI-44u"/>
+                    <constraint firstItem="3wG-1H-4L2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Qkr-aO-7pz"/>
+                    <constraint firstItem="W2A-6H-fMb" firstAttribute="bottom" secondItem="znf-FE-B91" secondAttribute="bottom" id="Rp0-oB-MF4"/>
+                    <constraint firstItem="cfd-t2-VT4" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Sjo-LZ-18R"/>
+                    <constraint firstItem="0LZ-Fp-Hnv" firstAttribute="bottom" secondItem="vVP-Tn-dcO" secondAttribute="bottom" id="Tf8-ma-2EV"/>
+                    <constraint firstItem="jH5-V7-TpJ" firstAttribute="top" secondItem="DGz-b8-DJS" secondAttribute="bottom" id="UMI-pD-Q42"/>
+                    <constraint firstItem="NCe-11-sFe" firstAttribute="centerX" secondItem="DLc-Zg-dry" secondAttribute="centerX" id="Vb2-I6-vRR"/>
+                    <constraint firstItem="jH5-V7-TpJ" firstAttribute="top" secondItem="cfd-t2-VT4" secondAttribute="bottom" constant="10" id="Z2j-GE-qbC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jH5-V7-TpJ" secondAttribute="trailing" id="ZgF-PH-r3L"/>
+                    <constraint firstItem="xt8-nc-VHF" firstAttribute="leading" secondItem="DGz-b8-DJS" secondAttribute="trailing" constant="20" id="Zvm-F8-n3d"/>
+                    <constraint firstItem="jH5-V7-TpJ" firstAttribute="top" secondItem="OGT-1J-fdn" secondAttribute="bottom" constant="10" id="aGL-m4-Qfq"/>
+                    <constraint firstItem="cfd-t2-VT4" firstAttribute="bottom" secondItem="xt8-nc-VHF" secondAttribute="bottom" id="cmp-JI-7AR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bVB-AK-Kih" secondAttribute="trailing" id="dLH-gk-01l"/>
+                    <constraint firstItem="DGz-b8-DJS" firstAttribute="leading" secondItem="3wG-1H-4L2" secondAttribute="trailing" id="djX-DB-mZe"/>
+                    <constraint firstItem="znf-FE-B91" firstAttribute="leading" secondItem="Vj1-WL-tcg" secondAttribute="trailing" constant="20" id="dl0-D0-JAL"/>
+                    <constraint firstItem="vVP-Tn-dcO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="eAc-Sd-4Q6"/>
+                    <constraint firstItem="Vj1-WL-tcg" firstAttribute="leading" secondItem="5no-dw-Oxh" secondAttribute="trailing" id="eYI-Ro-rcH"/>
+                    <constraint firstItem="jAN-ss-zku" firstAttribute="top" secondItem="jH5-V7-TpJ" secondAttribute="bottom" constant="15" id="fiz-Ot-41z"/>
+                    <constraint firstItem="1CB-o4-cTU" firstAttribute="top" secondItem="RDX-Kq-xry" secondAttribute="bottom" constant="2" id="h6m-Z4-Ofb"/>
+                    <constraint firstItem="RDX-Kq-xry" firstAttribute="top" secondItem="NCe-11-sFe" secondAttribute="bottom" constant="5" id="mHR-wk-zaG"/>
+                    <constraint firstItem="OGT-1J-fdn" firstAttribute="top" secondItem="3wG-1H-4L2" secondAttribute="bottom" constant="10" id="myL-dx-Oko"/>
+                    <constraint firstItem="jAN-ss-zku" firstAttribute="leading" secondItem="Vj1-WL-tcg" secondAttribute="trailing" constant="20" id="nMW-3I-cvr"/>
+                    <constraint firstItem="5no-dw-Oxh" firstAttribute="top" secondItem="jH5-V7-TpJ" secondAttribute="bottom" constant="15" id="nr3-qy-qkl"/>
+                    <constraint firstItem="Vj1-WL-tcg" firstAttribute="leading" secondItem="0LZ-Fp-Hnv" secondAttribute="trailing" constant="15" id="p3t-sh-Exv"/>
+                    <constraint firstItem="Vj1-WL-tcg" firstAttribute="top" secondItem="jH5-V7-TpJ" secondAttribute="bottom" id="pzv-MM-iBI"/>
+                    <constraint firstItem="U76-w1-Fu9" firstAttribute="leading" secondItem="DGz-b8-DJS" secondAttribute="trailing" constant="20" id="qzN-Kn-aV6"/>
+                    <constraint firstItem="W2A-6H-fMb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="sKN-g5-TwS"/>
+                    <constraint firstItem="bVB-AK-Kih" firstAttribute="top" secondItem="Vj1-WL-tcg" secondAttribute="bottom" constant="20" id="tYv-aw-TOK"/>
+                    <constraint firstItem="3wG-1H-4L2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="vP7-Lf-6WN"/>
+                    <constraint firstItem="jH5-V7-TpJ" firstAttribute="top" secondItem="gat-bX-hQY" secondAttribute="bottom" constant="10" id="x7O-Ge-4BK"/>
+                    <constraint firstItem="DLc-Zg-dry" firstAttribute="top" secondItem="bVB-AK-Kih" secondAttribute="bottom" constant="20" id="xpa-kw-wQ3"/>
+                    <constraint firstAttribute="trailing" secondItem="jAN-ss-zku" secondAttribute="trailing" id="xtZ-Rl-efK"/>
+                    <constraint firstItem="5no-dw-Oxh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="yS5-Qf-443"/>
+                    <constraint firstItem="jgX-n1-d4r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="zB4-Hy-V1X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="139" y="82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CountdownModeIcon" width="33" height="33.5"/>
+        <image name="FreeJumpModeIcon" width="33" height="33"/>
+        <image name="SmartRopeIcon" width="151" height="113"/>
+        <image name="TargetModeIcon" width="33" height="33"/>
+        <image name="TimerModeIcon" width="28" height="32"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

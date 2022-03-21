@@ -26,7 +26,7 @@
                         <rect key="frame" x="110" y="17" width="100" height="30"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1y-wA-qHT">
-                                <rect key="frame" x="33" y="8" width="34" height="14.5"/>
+                                <rect key="frame" x="33" y="8" width="34" height="14"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="13"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -71,6 +71,7 @@
                             <constraint firstItem="Q1y-wA-qHT" firstAttribute="centerX" secondItem="aXJ-qk-Hr0" secondAttribute="centerX" id="OVu-ZA-iSW"/>
                             <constraint firstItem="Q1y-wA-qHT" firstAttribute="centerY" secondItem="aXJ-qk-Hr0" secondAttribute="centerY" id="j2C-Zb-V2g"/>
                             <constraint firstAttribute="bottom" secondItem="YJD-2v-BRo" secondAttribute="bottom" constant="2" id="oDe-jo-i10"/>
+                            <constraint firstItem="Q1y-wA-qHT" firstAttribute="top" secondItem="aXJ-qk-Hr0" secondAttribute="top" constant="8" id="p7m-g8-eaX"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -80,6 +81,7 @@
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="aXJ-qk-Hr0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="94" id="6id-6C-GiI"/>
                     <constraint firstItem="aXJ-qk-Hr0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rWf-F4-81l"/>
                     <constraint firstItem="aXJ-qk-Hr0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="voc-UO-mdT"/>
                 </constraints>

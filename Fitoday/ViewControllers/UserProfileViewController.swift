@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UserProfileViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
     let cellIdentifier = "UserProfileTableViewCell"
     

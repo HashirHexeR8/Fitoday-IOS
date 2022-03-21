@@ -12,6 +12,9 @@
         <array key="Comfortaa-Bold.ttf">
             <string>Comfortaa-Bold</string>
         </array>
+        <array key="Comfortaa-Light.ttf">
+            <string>Comfortaa-Light</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -69,15 +72,32 @@
                                     <constraint firstItem="Smv-uE-zCB" firstAttribute="centerY" secondItem="It5-Cg-Ok2" secondAttribute="centerY" id="zH1-4C-itz"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ExerciseMapIcon" translatesAutoresizingMaskIntoConstraints="NO" id="MoR-2Y-7LU">
+                                <rect key="frame" x="178.5" y="95" width="58" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="drL-IH-1C3"/>
+                                    <constraint firstAttribute="width" constant="58" id="mDY-3h-NJo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 of 5 Days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-az-WzE">
+                                <rect key="frame" x="139.5" y="150" width="136" height="27"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Light" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aJi-VH-m4k" firstAttribute="top" secondItem="rTF-Ok-Tv1" secondAttribute="top" constant="-11" id="6Du-QT-rNF"/>
                             <constraint firstItem="It5-Cg-Ok2" firstAttribute="leading" secondItem="rTF-Ok-Tv1" secondAttribute="leading" constant="8" id="6qK-g8-9Cz"/>
+                            <constraint firstItem="Kh3-az-WzE" firstAttribute="top" secondItem="MoR-2Y-7LU" secondAttribute="bottom" constant="5" id="9eA-Jb-d6Y"/>
                             <constraint firstItem="aJi-VH-m4k" firstAttribute="leading" secondItem="rTF-Ok-Tv1" secondAttribute="leading" id="HYo-tH-4MG"/>
                             <constraint firstAttribute="bottom" secondItem="aJi-VH-m4k" secondAttribute="bottom" id="INs-WC-UjO"/>
                             <constraint firstAttribute="trailing" secondItem="aJi-VH-m4k" secondAttribute="trailing" id="bnO-6R-bef"/>
+                            <constraint firstItem="MoR-2Y-7LU" firstAttribute="top" secondItem="It5-Cg-Ok2" secondAttribute="bottom" constant="60" id="fWb-Oy-VAP"/>
                             <constraint firstAttribute="trailing" secondItem="It5-Cg-Ok2" secondAttribute="trailing" constant="8" id="msA-xj-N9k"/>
+                            <constraint firstItem="MoR-2Y-7LU" firstAttribute="centerX" secondItem="rTF-Ok-Tv1" secondAttribute="centerX" id="sEm-wg-1RT"/>
+                            <constraint firstItem="Kh3-az-WzE" firstAttribute="centerX" secondItem="rTF-Ok-Tv1" secondAttribute="centerX" id="uFK-7D-1Wg"/>
                             <constraint firstItem="It5-Cg-Ok2" firstAttribute="top" secondItem="rTF-Ok-Tv1" secondAttribute="top" constant="10" id="vg6-Ws-YFd"/>
                         </constraints>
                     </view>
@@ -96,6 +116,7 @@
     <resources>
         <image name="DeviceSettingsIcon" width="18" height="19"/>
         <image name="ExerciseMapBackground" width="428" height="373"/>
+        <image name="ExerciseMapIcon" width="54" height="50.5"/>
         <image name="ExerciseSelectedIcon" width="19" height="19"/>
         <image name="IconBackArrowDark" width="16" height="14.5"/>
         <systemColor name="systemBackgroundColor">

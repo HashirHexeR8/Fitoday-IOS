@@ -32,18 +32,30 @@
                                     <constraint firstAttribute="height" constant="100" id="M1q-Fz-49O"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fitoday Smart Scale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr5-L6-gEx">
-                                <rect key="frame" x="298" y="78" width="138" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitody Smart Scale" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-1d-6Ls">
+                                <rect key="frame" x="220" y="70" width="129" height="15"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="13"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optimize Your Fitness Performance With Precise Measuring &amp; Tracking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOB-9s-gdN">
+                                <rect key="frame" x="184.5" y="95" width="200" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="o9g-ma-00l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="8"/>
+                                <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.83137254900000002" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2ct-XX-7h3" firstAttribute="leading" secondItem="Wxp-2H-pOy" secondAttribute="leading" constant="60" id="i1d-cB-YFb"/>
+                            <constraint firstItem="8Xf-1d-6Ls" firstAttribute="centerX" secondItem="GOB-9s-gdN" secondAttribute="centerX" id="jmi-nO-VZA"/>
+                            <constraint firstItem="8Xf-1d-6Ls" firstAttribute="leading" secondItem="2ct-XX-7h3" secondAttribute="trailing" constant="60" id="oFf-W9-tlz"/>
+                            <constraint firstItem="GOB-9s-gdN" firstAttribute="top" secondItem="8Xf-1d-6Ls" secondAttribute="bottom" constant="10" id="pT5-6g-1uB"/>
                             <constraint firstItem="2ct-XX-7h3" firstAttribute="centerY" secondItem="Wxp-2H-pOy" secondAttribute="centerY" id="q7s-gW-BuV"/>
+                            <constraint firstItem="8Xf-1d-6Ls" firstAttribute="top" secondItem="Wxp-2H-pOy" secondAttribute="top" constant="70" id="zpq-5F-6Sp"/>
                         </constraints>
                     </view>
                 </subviews>

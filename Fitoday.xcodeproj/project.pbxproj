@@ -11,6 +11,22 @@
 		1814493627948A08001FCC79 /* IntroPagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1814493427948A08001FCC79 /* IntroPagerViewController.xib */; };
 		1814493F27949207001FCC79 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814493E27949207001FCC79 /* extensions.swift */; };
 		1814494127949608001FCC79 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1814494027949608001FCC79 /* Enum.swift */; };
+		187D5E8227E3A1A700B237A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E8127E3A1A700B237A6 /* BaseViewController.swift */; };
+		187D5E8527E3C95500B237A6 /* FreeJumpingModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E8427E3C95500B237A6 /* FreeJumpingModeViewController.swift */; };
+		187D5E8727E3C9F800B237A6 /* TargetModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E8627E3C9F800B237A6 /* TargetModeViewController.swift */; };
+		187D5E8927E3CAFD00B237A6 /* TimerModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E8827E3CAFD00B237A6 /* TimerModeViewController.swift */; };
+		187D5E8B27E3CDDB00B237A6 /* SetTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E8A27E3CDDB00B237A6 /* SetTargetViewController.swift */; };
+		187D5E8E27E3EC4200B237A6 /* SingupHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E8C27E3EC4200B237A6 /* SingupHeaderTableViewCell.swift */; };
+		187D5E8F27E3EC4200B237A6 /* SingupHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187D5E8D27E3EC4200B237A6 /* SingupHeaderTableViewCell.xib */; };
+		187D5E9227E5BA9000B237A6 /* SelectedRowCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E9127E5BA9000B237A6 /* SelectedRowCustomView.swift */; };
+		187D5E9427E5BAB000B237A6 /* SelectedRowCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187D5E9327E5BAB000B237A6 /* SelectedRowCustomView.xib */; };
+		187D5E9727E70A2600B237A6 /* NewWeightGoalSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E9627E70A2600B237A6 /* NewWeightGoalSetViewController.swift */; };
+		187D5E9927E70A9200B237A6 /* CurrentWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E9827E70A9200B237A6 /* CurrentWeightViewController.swift */; };
+		187D5E9B27E70AC800B237A6 /* GoalWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E9A27E70AC800B237A6 /* GoalWeightViewController.swift */; };
+		187D5E9D27E70AFE00B237A6 /* GoalAcheivedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5E9C27E70AFE00B237A6 /* GoalAcheivedViewController.swift */; };
+		187D5E9F27E7120D00B237A6 /* WeightSelectedRowCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187D5E9E27E7120D00B237A6 /* WeightSelectedRowCustomView.xib */; };
+		187D5EA127E712C800B237A6 /* WeightSelectedRowCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D5EA027E712C800B237A6 /* WeightSelectedRowCustomView.swift */; };
+		187D5EA327E720F100B237A6 /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 187D5EA227E720E200B237A6 /* BebasNeue-Regular.ttf */; };
 		189534F827CC0F5700AE81A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189534F627CC0F5700AE81A1 /* HomeViewController.swift */; };
 		189534F927CC0F5700AE81A1 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189534F727CC0F5700AE81A1 /* HomeViewController.xib */; };
 		189534FC27CD67C300AE81A1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189534FA27CD67C300AE81A1 /* SettingsViewController.swift */; };
@@ -77,8 +93,15 @@
 		18CD845D27E0FB8200B430FB /* DailyWeightItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD845C27E0FB8200B430FB /* DailyWeightItemDTO.swift */; };
 		18CD846027E0FCA400B430FB /* WeightManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD845E27E0FCA400B430FB /* WeightManagementViewController.swift */; };
 		18CD846127E0FCA400B430FB /* WeightManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CD845F27E0FCA400B430FB /* WeightManagementViewController.xib */; };
+		18E01AD527E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E01AD327E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.swift */; };
+		18E01AD627E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E01AD427E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.xib */; };
+		18E3E7D627E2979B00CA2920 /* JumpingRopeLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3E7D527E2979B00CA2920 /* JumpingRopeLandingViewController.swift */; };
 		18EA89D027A350270051DB88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EA89CE27A350270051DB88 /* SignUpViewController.swift */; };
 		18EA89D127A350270051DB88 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EA89CF27A350270051DB88 /* SignUpViewController.xib */; };
+		18F5F99427E2576700ECDC95 /* JumpingRopes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5F99327E2576700ECDC95 /* JumpingRopes.storyboard */; };
+		18F5F99627E2587A00ECDC95 /* WeightManagement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F5F99527E2587A00ECDC95 /* WeightManagement.storyboard */; };
+		18F5F99927E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F99727E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.swift */; };
+		18F5F99A27E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F5F99827E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.xib */; };
 		18F8F442279606D600627B98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8F440279606D600627B98 /* LoginViewController.swift */; };
 		18F8F443279606D600627B98 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8F441279606D600627B98 /* LoginViewController.xib */; };
 		18F8F44527972C3C00627B98 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F8F44427972C3C00627B98 /* Empty.xib */; };
@@ -90,6 +113,22 @@
 		1814493427948A08001FCC79 /* IntroPagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroPagerViewController.xib; sourceTree = "<group>"; };
 		1814493E27949207001FCC79 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		1814494027949608001FCC79 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		187D5E8127E3A1A700B237A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		187D5E8427E3C95500B237A6 /* FreeJumpingModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeJumpingModeViewController.swift; sourceTree = "<group>"; };
+		187D5E8627E3C9F800B237A6 /* TargetModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetModeViewController.swift; sourceTree = "<group>"; };
+		187D5E8827E3CAFD00B237A6 /* TimerModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModeViewController.swift; sourceTree = "<group>"; };
+		187D5E8A27E3CDDB00B237A6 /* SetTargetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTargetViewController.swift; sourceTree = "<group>"; };
+		187D5E8C27E3EC4200B237A6 /* SingupHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		187D5E8D27E3EC4200B237A6 /* SingupHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingupHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		187D5E9127E5BA9000B237A6 /* SelectedRowCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedRowCustomView.swift; sourceTree = "<group>"; };
+		187D5E9327E5BAB000B237A6 /* SelectedRowCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedRowCustomView.xib; sourceTree = "<group>"; };
+		187D5E9627E70A2600B237A6 /* NewWeightGoalSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWeightGoalSetViewController.swift; sourceTree = "<group>"; };
+		187D5E9827E70A9200B237A6 /* CurrentWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeightViewController.swift; sourceTree = "<group>"; };
+		187D5E9A27E70AC800B237A6 /* GoalWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalWeightViewController.swift; sourceTree = "<group>"; };
+		187D5E9C27E70AFE00B237A6 /* GoalAcheivedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAcheivedViewController.swift; sourceTree = "<group>"; };
+		187D5E9E27E7120D00B237A6 /* WeightSelectedRowCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightSelectedRowCustomView.xib; sourceTree = "<group>"; };
+		187D5EA027E712C800B237A6 /* WeightSelectedRowCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSelectedRowCustomView.swift; sourceTree = "<group>"; };
+		187D5EA227E720E200B237A6 /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
 		189534F627CC0F5700AE81A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		189534F727CC0F5700AE81A1 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		189534FA27CD67C300AE81A1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -158,8 +197,15 @@
 		18CD845C27E0FB8200B430FB /* DailyWeightItemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeightItemDTO.swift; sourceTree = "<group>"; };
 		18CD845E27E0FCA400B430FB /* WeightManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightManagementViewController.swift; sourceTree = "<group>"; };
 		18CD845F27E0FCA400B430FB /* WeightManagementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeightManagementViewController.xib; sourceTree = "<group>"; };
+		18E01AD327E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingRopesLandingBottomTableViewCell.swift; sourceTree = "<group>"; };
+		18E01AD427E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JumpingRopesLandingBottomTableViewCell.xib; sourceTree = "<group>"; };
+		18E3E7D527E2979B00CA2920 /* JumpingRopeLandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingRopeLandingViewController.swift; sourceTree = "<group>"; };
 		18EA89CE27A350270051DB88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		18EA89CF27A350270051DB88 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		18F5F99327E2576700ECDC95 /* JumpingRopes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JumpingRopes.storyboard; sourceTree = "<group>"; };
+		18F5F99527E2587A00ECDC95 /* WeightManagement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeightManagement.storyboard; sourceTree = "<group>"; };
+		18F5F99727E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpingRopesLandingHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		18F5F99827E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JumpingRopesLandingHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		18F8F440279606D600627B98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18F8F441279606D600627B98 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		18F8F44427972C3C00627B98 /* Empty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
@@ -183,6 +229,8 @@
 		1814492D279485BF001FCC79 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				187D5E9527E709DE00B237A6 /* WeightManagement */,
+				187D5E8327E3C90800B237A6 /* JumpingRopes */,
 				1814493327948A08001FCC79 /* IntroPagerViewController.swift */,
 				1814493427948A08001FCC79 /* IntroPagerViewController.xib */,
 				18F8F440279606D600627B98 /* LoginViewController.swift */,
@@ -203,8 +251,7 @@
 				18CD842927D2C3C200B430FB /* DashboardViewController.xib */,
 				18CD844627DE752500B430FB /* BodyProportionsViewController.swift */,
 				18CD844727DE752500B430FB /* BodyProportionsViewController.xib */,
-				18CD845E27E0FCA400B430FB /* WeightManagementViewController.swift */,
-				18CD845F27E0FCA400B430FB /* WeightManagementViewController.xib */,
+				187D5E8127E3A1A700B237A6 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,6 +261,8 @@
 			children = (
 				18C48673278E2A4B00709944 /* ViewController.swift */,
 				18C48675278E2A4B00709944 /* Main.storyboard */,
+				18F5F99327E2576700ECDC95 /* JumpingRopes.storyboard */,
+				18F5F99527E2587A00ECDC95 /* WeightManagement.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -221,6 +270,7 @@
 		1814493727948C80001FCC79 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				187D5EA227E720E200B237A6 /* BebasNeue-Regular.ttf */,
 				1897811E27CE8535001EBDE0 /* Comfortaa-Bold.ttf */,
 				1897811D27CE8535001EBDE0 /* Comfortaa-Light.ttf */,
 				1897811F27CE8535001EBDE0 /* Comfortaa-Medium.ttf */,
@@ -237,6 +287,42 @@
 				1814494027949608001FCC79 /* Enum.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		187D5E8327E3C90800B237A6 /* JumpingRopes */ = {
+			isa = PBXGroup;
+			children = (
+				18E3E7D527E2979B00CA2920 /* JumpingRopeLandingViewController.swift */,
+				187D5E8427E3C95500B237A6 /* FreeJumpingModeViewController.swift */,
+				187D5E8627E3C9F800B237A6 /* TargetModeViewController.swift */,
+				187D5E8827E3CAFD00B237A6 /* TimerModeViewController.swift */,
+				187D5E8A27E3CDDB00B237A6 /* SetTargetViewController.swift */,
+			);
+			path = JumpingRopes;
+			sourceTree = "<group>";
+		};
+		187D5E9027E5BA7000B237A6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				187D5E9127E5BA9000B237A6 /* SelectedRowCustomView.swift */,
+				187D5E9327E5BAB000B237A6 /* SelectedRowCustomView.xib */,
+				187D5E9E27E7120D00B237A6 /* WeightSelectedRowCustomView.xib */,
+				187D5EA027E712C800B237A6 /* WeightSelectedRowCustomView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		187D5E9527E709DE00B237A6 /* WeightManagement */ = {
+			isa = PBXGroup;
+			children = (
+				18CD845E27E0FCA400B430FB /* WeightManagementViewController.swift */,
+				18CD845F27E0FCA400B430FB /* WeightManagementViewController.xib */,
+				187D5E9627E70A2600B237A6 /* NewWeightGoalSetViewController.swift */,
+				187D5E9827E70A9200B237A6 /* CurrentWeightViewController.swift */,
+				187D5E9A27E70AC800B237A6 /* GoalWeightViewController.swift */,
+				187D5E9C27E70AFE00B237A6 /* GoalAcheivedViewController.swift */,
+			);
+			path = WeightManagement;
 			sourceTree = "<group>";
 		};
 		189534FE27CD6A2D00AE81A1 /* Cells */ = {
@@ -276,6 +362,12 @@
 				18CD845527DE8CF300B430FB /* WeightManagementBottomTableViewCell.xib */,
 				18CD845827E0F87D00B430FB /* WeightManagementDailyWeightItemTableViewCell.swift */,
 				18CD845927E0F87D00B430FB /* WeightManagementDailyWeightItemTableViewCell.xib */,
+				18F5F99727E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.swift */,
+				18F5F99827E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.xib */,
+				18E01AD327E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.swift */,
+				18E01AD427E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.xib */,
+				187D5E8C27E3EC4200B237A6 /* SingupHeaderTableViewCell.swift */,
+				187D5E8D27E3EC4200B237A6 /* SingupHeaderTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -315,6 +407,7 @@
 		18C4866E278E2A4B00709944 /* Fitoday */ = {
 			isa = PBXGroup;
 			children = (
+				187D5E9027E5BA7000B237A6 /* CustomViews */,
 				1897813327CFE86D001EBDE0 /* Model */,
 				189534FE27CD6A2D00AE81A1 /* Cells */,
 				1814493D279491EF001FCC79 /* Utils */,
@@ -410,9 +503,11 @@
 				18CD842F27D317B700B430FB /* ExerciseDescriptionCellViewTableViewCell.xib in Resources */,
 				18CD842327D2403C00B430FB /* ExerciseViewController.xib in Resources */,
 				18F8F443279606D600627B98 /* LoginViewController.xib in Resources */,
+				187D5E8F27E3EC4200B237A6 /* SingupHeaderTableViewCell.xib in Resources */,
 				18CD841F27D1FB4000B430FB /* Assets.xcassets in Resources */,
 				1897813D27CFFAEC001EBDE0 /* ShopDeviceTableViewCell.xib in Resources */,
 				18CD846127E0FCA400B430FB /* WeightManagementViewController.xib in Resources */,
+				18F5F99A27E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.xib in Resources */,
 				189534FD27CD67C300AE81A1 /* SettingsViewController.xib in Resources */,
 				18CD844527DE25BC00B430FB /* BodyProportionsBottomCellView.xib in Resources */,
 				1897812427CE8535001EBDE0 /* Comfortaa-Medium.ttf in Resources */,
@@ -421,20 +516,26 @@
 				1895350627CD6A7F00AE81A1 /* SettingsItemCellView.xib in Resources */,
 				18CD844127DE048600B430FB /* BodyProportionsHeaderTableViewCell.xib in Resources */,
 				1897812327CE8535001EBDE0 /* Comfortaa-Bold.ttf in Resources */,
+				18F5F99427E2576700ECDC95 /* JumpingRopes.storyboard in Resources */,
 				18C4867C278E2A4E00709944 /* LaunchScreen.storyboard in Resources */,
 				1897812227CE8535001EBDE0 /* Comfortaa-Light.ttf in Resources */,
+				18E01AD627E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.xib in Resources */,
 				18CD843927DC6D1300B430FB /* HomeHeaderTableViewCell.xib in Resources */,
 				18EA89D127A350270051DB88 /* SignUpViewController.xib in Resources */,
 				18CD842727D2BBDA00B430FB /* ExerciseMapCellTableViewCell.xib in Resources */,
+				187D5E9427E5BAB000B237A6 /* SelectedRowCustomView.xib in Resources */,
 				18CD844D27DE774800B430FB /* BodyProportionTableViewCell.xib in Resources */,
 				1897813927CFF176001EBDE0 /* ShopDevicesViewController.xib in Resources */,
 				18F8F44527972C3C00627B98 /* Empty.xib in Resources */,
 				1895350A27CE7C9D00AE81A1 /* SettingsShopFitodayCellView.xib in Resources */,
+				18F5F99627E2587A00ECDC95 /* WeightManagement.storyboard in Resources */,
 				1897812627CE8535001EBDE0 /* Comfortaa-SemiBold.ttf in Resources */,
 				18CD845727DE8CF300B430FB /* WeightManagementBottomTableViewCell.xib in Resources */,
 				1897812A27CE865E001EBDE0 /* SettingsLogoutButtonTableViewCell.xib in Resources */,
 				18CD845327DE87C800B430FB /* WeightManagementHeaderTableViewCell.xib in Resources */,
 				18CD845B27E0F87D00B430FB /* WeightManagementDailyWeightItemTableViewCell.xib in Resources */,
+				187D5EA327E720F100B237A6 /* BebasNeue-Regular.ttf in Resources */,
+				187D5E9F27E7120D00B237A6 /* WeightSelectedRowCustomView.xib in Resources */,
 				18C48677278E2A4B00709944 /* Main.storyboard in Resources */,
 				1897813227CEB7AD001EBDE0 /* UserProfileTableViewCell.xib in Resources */,
 				1814493627948A08001FCC79 /* IntroPagerViewController.xib in Resources */,
@@ -499,17 +600,30 @@
 				18CD845D27E0FB8200B430FB /* DailyWeightItemDTO.swift in Sources */,
 				18CD842A27D2C3C200B430FB /* DashboardViewController.swift in Sources */,
 				18CD842227D2403C00B430FB /* ExerciseViewController.swift in Sources */,
+				187D5E8B27E3CDDB00B237A6 /* SetTargetViewController.swift in Sources */,
+				187D5E8727E3C9F800B237A6 /* TargetModeViewController.swift in Sources */,
 				18CD842E27D317B700B430FB /* ExerciseDescriptionCellViewTableViewCell.swift in Sources */,
+				187D5E8227E3A1A700B237A6 /* BaseViewController.swift in Sources */,
 				18CD846027E0FCA400B430FB /* WeightManagementViewController.swift in Sources */,
 				18CD843C27DDE16B00B430FB /* DeviceBannerCollectionViewCell.swift in Sources */,
 				18CD844F27DE7F4400B430FB /* BodyProportionsItemDTO.swift in Sources */,
 				18F8F442279606D600627B98 /* LoginViewController.swift in Sources */,
+				187D5E9D27E70AFE00B237A6 /* GoalAcheivedViewController.swift in Sources */,
 				1897813C27CFFAEC001EBDE0 /* ShopDeviceTableViewCell.swift in Sources */,
+				187D5E9227E5BA9000B237A6 /* SelectedRowCustomView.swift in Sources */,
+				18F5F99927E26C5100ECDC95 /* JumpingRopesLandingHeaderTableViewCell.swift in Sources */,
+				187D5EA127E712C800B237A6 /* WeightSelectedRowCustomView.swift in Sources */,
 				18CD842627D2BBDA00B430FB /* ExerciseMapCellTableViewCell.swift in Sources */,
+				187D5E9B27E70AC800B237A6 /* GoalWeightViewController.swift in Sources */,
 				1814493F27949207001FCC79 /* extensions.swift in Sources */,
 				1895350927CE7C9D00AE81A1 /* SettingsShopFitodayCellView.swift in Sources */,
+				187D5E8927E3CAFD00B237A6 /* TimerModeViewController.swift in Sources */,
+				187D5E8527E3C95500B237A6 /* FreeJumpingModeViewController.swift in Sources */,
 				18EA89D027A350270051DB88 /* SignUpViewController.swift in Sources */,
+				18E01AD527E27CBF002605BC /* JumpingRopesLandingBottomTableViewCell.swift in Sources */,
+				187D5E9727E70A2600B237A6 /* NewWeightGoalSetViewController.swift in Sources */,
 				1897813127CEB7AD001EBDE0 /* UserProfileTableViewCell.swift in Sources */,
+				187D5E9927E70A9200B237A6 /* CurrentWeightViewController.swift in Sources */,
 				18CD843827DC6D1300B430FB /* HomeHeaderTableViewCell.swift in Sources */,
 				18CD844027DE048500B430FB /* BodyProportionsHeaderTableViewCell.swift in Sources */,
 				18CD845A27E0F87D00B430FB /* WeightManagementDailyWeightItemTableViewCell.swift in Sources */,
@@ -526,8 +640,10 @@
 				1897812D27CE8F36001EBDE0 /* UserProfileViewController.swift in Sources */,
 				189534F827CC0F5700AE81A1 /* HomeViewController.swift in Sources */,
 				18CD844427DE25BC00B430FB /* BodyProportionsBottomCellView.swift in Sources */,
+				187D5E8E27E3EC4200B237A6 /* SingupHeaderTableViewCell.swift in Sources */,
 				18C48670278E2A4B00709944 /* AppDelegate.swift in Sources */,
 				18C48672278E2A4B00709944 /* SceneDelegate.swift in Sources */,
+				18E3E7D627E2979B00CA2920 /* JumpingRopeLandingViewController.swift in Sources */,
 				18CD844C27DE774800B430FB /* BodyProportionTableViewCell.swift in Sources */,
 				18CD843227D31B1E00B430FB /* ExerciseItemsTableViewCell.swift in Sources */,
 				1897813827CFF176001EBDE0 /* ShopDevicesViewController.swift in Sources */,
