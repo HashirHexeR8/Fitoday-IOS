@@ -26,15 +26,19 @@ class WeightManagementHeaderTableViewCell: UITableViewCell {
         let value4 = ChartDataEntry(x: 9.2, y: 8.4)
         lineChartDatalist.append(value4)
         
-        let line = LineChartDataSet(entries: lineChartDatalist, label: "Pretty")
-        line.colors = [NSUIColor.blue]
-        var data = LineChartData()
+        let line = LineChartDataSet(entries: lineChartDatalist, label: "Weight(kg)")
+        let color = UIColor(hexString: "EF426F")
+        line.colors = [color]
+        line.circleColors = [color]
+        line.circleHoleColor = color
+        let data = LineChartData()
         data.append(line)
         
         chartView.data = data
         
         chartView.dragEnabled = false
         chartView.pinchZoomEnabled = false
+        chartView.doubleTapToZoomEnabled = false
         
         // Initialization code
     }

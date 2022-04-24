@@ -26,6 +26,8 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createAccountButton.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
         scrollView.contentSize = CGSize(width: contentView.frame.width, height: contentView.frame.height)
         
         

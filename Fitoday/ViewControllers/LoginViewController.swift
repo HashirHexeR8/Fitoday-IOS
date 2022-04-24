@@ -39,6 +39,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnLogin.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
+        
         let loginButtonGesture = UITapGestureRecognizer(target: self, action: #selector(self.loginButtonOnClick(_:)))
         self.btnLogin.addGestureRecognizer(loginButtonGesture)
         
@@ -82,6 +84,11 @@ class LoginViewController: UIViewController {
         }
         else if isJoinFitoday {
             let vc = SignUpViewController()
+            vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+            self.present(vc, animated: true, completion: nil)
+        }
+        else {
+            let vc = DashboardViewController()
             vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
             self.present(vc, animated: true, completion: nil)
         }

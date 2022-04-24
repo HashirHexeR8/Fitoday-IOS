@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "IDK 1@1x.png",
+      "filename" : "IntroLogoIdk.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "IDK 1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "IDK 1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

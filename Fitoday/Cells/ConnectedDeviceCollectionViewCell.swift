@@ -14,12 +14,12 @@ class ConnectedDeviceCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        connectedDeviceIconViewContainer?.layer.cornerRadius = (connectedDeviceIconViewContainer?.frame.size.width ?? 350)/2
+        connectedDeviceIconViewContainer?.layer.cornerRadius = (connectedDeviceIconViewContainer?.frame.size.width ?? 350)/4
         connectedDeviceIconViewContainer?.clipsToBounds = true
         // Initialization code
     }
     
-    func initCell() {
+    func initCell(itemInfo: ShopDeciceItemInfoDTO) {
         
     }
 

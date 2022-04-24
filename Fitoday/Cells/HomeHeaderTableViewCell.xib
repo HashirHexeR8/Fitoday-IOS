@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeHeaderTableViewCell" customModule="Fitoday" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeHeaderTableViewCell" customModule="Fitody" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="500" height="408"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -45,7 +45,7 @@
                                         <state key="normal" image="HomeNotification"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ie-2r-W37">
-                                        <rect key="frame" x="368" y="15.5" width="28" height="29"/>
+                                        <rect key="frame" x="388" y="15.5" width="28" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="5Ad-lX-Xwl"/>
                                             <constraint firstAttribute="width" constant="28" id="Mm0-RR-o8F"/>
@@ -56,7 +56,7 @@
                                             <action selector="onSettingsButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AY4-Hv-Xke"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePictureDefaultPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="SV0-rX-6Id">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileIconPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="SV0-rX-6Id">
                                         <rect key="frame" x="25" y="9.5" width="41" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="41" id="FMs-HK-7H5"/>
@@ -77,7 +77,7 @@
                                     <constraint firstAttribute="trailing" secondItem="oaB-MJ-itw" secondAttribute="trailing" constant="25" id="OJa-nT-5S6"/>
                                     <constraint firstAttribute="height" constant="60" id="Pm3-nZ-e3N"/>
                                     <constraint firstItem="oaB-MJ-itw" firstAttribute="centerY" secondItem="GTn-Qf-irT" secondAttribute="centerY" id="Rk9-qj-LzE"/>
-                                    <constraint firstItem="oaB-MJ-itw" firstAttribute="leading" secondItem="1ie-2r-W37" secondAttribute="trailing" constant="45" id="Rqi-cq-do8"/>
+                                    <constraint firstItem="oaB-MJ-itw" firstAttribute="leading" secondItem="1ie-2r-W37" secondAttribute="trailing" constant="25" id="Rqi-cq-do8"/>
                                     <constraint firstItem="SV0-rX-6Id" firstAttribute="centerY" secondItem="GTn-Qf-irT" secondAttribute="centerY" id="YjS-m7-TSl"/>
                                     <constraint firstItem="GMm-hI-V0N" firstAttribute="centerX" secondItem="GTn-Qf-irT" secondAttribute="centerX" id="e3v-U5-eAm"/>
                                     <constraint firstItem="1ie-2r-W37" firstAttribute="centerY" secondItem="GTn-Qf-irT" secondAttribute="centerY" id="jzN-AE-eeN"/>
@@ -346,7 +346,7 @@
         <image name="HomeNotification" width="34" height="29"/>
         <image name="HomeSettings" width="28" height="29"/>
         <image name="HomeWalkingIcon" width="22" height="25.5"/>
-        <image name="ProfilePictureDefaultPlaceHolder" width="1200" height="1200"/>
+        <image name="ProfileIconPlaceHolder" width="168" height="160"/>
         <image name="TopBarAppIcon" width="51" height="51"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

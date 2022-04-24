@@ -8,9 +8,13 @@
 import UIKit
 
 class BodyProportionsBottomCellView: UITableViewCell {
+    
+    @IBOutlet weak var btnBodyProportionsSave: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        btnBodyProportionsSave.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
 
         // Initialization code
     }

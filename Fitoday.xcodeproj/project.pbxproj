@@ -154,7 +154,7 @@
 		1897813A27CFFAEC001EBDE0 /* ShopDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDeviceTableViewCell.swift; sourceTree = "<group>"; };
 		1897813B27CFFAEC001EBDE0 /* ShopDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopDeviceTableViewCell.xib; sourceTree = "<group>"; };
 		1897813E27D0014A001EBDE0 /* ShopDeviceItemInfoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDeviceItemInfoDTO.swift; sourceTree = "<group>"; };
-		18C4866C278E2A4B00709944 /* Fitoday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitoday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C4866C278E2A4B00709944 /* Fitody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C4866F278E2A4B00709944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C48671278E2A4B00709944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18C48673278E2A4B00709944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -399,7 +399,7 @@
 		18C4866D278E2A4B00709944 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18C4866C278E2A4B00709944 /* Fitoday.app */,
+				18C4866C278E2A4B00709944 /* Fitody.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,9 +442,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18C4866B278E2A4B00709944 /* Fitoday */ = {
+		18C4866B278E2A4B00709944 /* Fitody */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18C48680278E2A4E00709944 /* Build configuration list for PBXNativeTarget "Fitoday" */;
+			buildConfigurationList = 18C48680278E2A4E00709944 /* Build configuration list for PBXNativeTarget "Fitody" */;
 			buildPhases = (
 				666E7266DE1F3C109DA74B2E /* [CP] Check Pods Manifest.lock */,
 				18C48668278E2A4B00709944 /* Sources */,
@@ -456,9 +456,9 @@
 			);
 			dependencies = (
 			);
-			name = Fitoday;
+			name = Fitody;
 			productName = Fitoday;
-			productReference = 18C4866C278E2A4B00709944 /* Fitoday.app */;
+			productReference = 18C4866C278E2A4B00709944 /* Fitody.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -489,7 +489,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18C4866B278E2A4B00709944 /* Fitoday */,
+				18C4866B278E2A4B00709944 /* Fitody */,
 			);
 		};
 /* End PBXProject section */
@@ -796,14 +796,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C2NYH65PKZ;
+				DEVELOPMENT_TEAM = JW32F7XHML;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fitoday/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -811,9 +814,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.active.Fitoday;
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.active.Fitody;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Fitody Live Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -826,14 +830,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C2NYH65PKZ;
+				DEVELOPMENT_TEAM = JW32F7XHML;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Fitoday/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -841,9 +848,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.active.Fitoday;
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.active.Fitody;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Fitody Live Provisioning Profile";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -862,7 +870,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18C48680278E2A4E00709944 /* Build configuration list for PBXNativeTarget "Fitoday" */ = {
+		18C48680278E2A4E00709944 /* Build configuration list for PBXNativeTarget "Fitody" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18C48681278E2A4E00709944 /* Debug */,

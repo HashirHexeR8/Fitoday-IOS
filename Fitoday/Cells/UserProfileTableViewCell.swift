@@ -43,13 +43,20 @@ class UserProfileTableViewCell: UITableViewCell {
     func initCell(infoDTO: UserProfileInfoDTO) {
         profileItemTitle?.isHidden = !infoDTO.isTitleItem
         profileItemTitleLabel?.text = infoDTO.profileItemTitle
-        firstItemTitleIcon?.isHidden = infoDTO.profileFirstItemIcon == nil
+        firstItemTitleIcon?.isHidden = !infoDTO.isItemIconRequired
         firstItemTitleKey?.text = infoDTO.profileFirstItemKey
         firstItemValue?.text = infoDTO.profileFirstItemValue
-        secondItemTitleIcon?.isHidden = infoDTO.profileSecondItemIcon == nil
+        secondItemTitleIcon?.isHidden = !infoDTO.isItemIconRequired
         secondItemTitleKey?.text = infoDTO.profileSecondItemKey
         secondItemValue?.text = infoDTO.profileSecondItemValue
         profileItemSeparator?.isHidden = !infoDTO.isLastItem
+        
+        if infoDTO.profileFirstItemIcon != nil {
+            firstItemTitleIcon?.image = infoDTO.profileFirstItemIcon
+        }
+        if infoDTO.profileSecondItemIcon != nil {
+            secondItemTitleIcon?.image = infoDTO.profileSecondItemIcon
+        }
 
     }
 

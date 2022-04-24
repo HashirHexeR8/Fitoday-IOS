@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "18C4866B278E2A4B00709944"
-               BuildableName = "Fitoday.app"
-               BlueprintName = "Fitoday"
+               BuildableName = "Fitody.app"
+               BlueprintName = "Fitody"
                ReferencedContainer = "container:Fitoday.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18C4866B278E2A4B00709944"
-            BuildableName = "Fitoday.app"
-            BlueprintName = "Fitoday"
+            BuildableName = "Fitody.app"
+            BlueprintName = "Fitody"
             ReferencedContainer = "container:Fitoday.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18C4866B278E2A4B00709944"
-            BuildableName = "Fitoday.app"
-            BlueprintName = "Fitoday"
+            BuildableName = "Fitody.app"
+            BlueprintName = "Fitody"
             ReferencedContainer = "container:Fitoday.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

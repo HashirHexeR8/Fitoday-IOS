@@ -13,6 +13,7 @@ class ShopDevicesViewController: BaseViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var shopDevicesTableView: UITableView!
     @IBOutlet weak var connectedDevicesCollectionView: UICollectionView!
     @IBOutlet weak var bannerDevicesCollectionView: UICollectionView!
+    @IBOutlet weak var bannerDevicesPageControl: UIPageControl!
 
 
     
@@ -44,14 +45,14 @@ class ShopDevicesViewController: BaseViewController, UITableViewDelegate, UITabl
         
         
         let smartWeight = ShopDeciceItemInfoDTO(itemName: "Fitody Smart Scale", itemDescription: "Full Body Composition Including Body Fat, BMI, Water Percentage, Muscle & Bone Mass", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "WeightScaleIcon")
-        let smartRope = ShopDeciceItemInfoDTO(itemName: "Fitody Smart Tape", itemDescription: "Optimize Your Fitness Performance With Precise Measuring & Tracking", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "SmartJumpRopeIcon")
-        let smartTape = ShopDeciceItemInfoDTO(itemName: "Fitody Smart Rope", itemDescription: "Optimize Your Fitness Performance With Precise Measuring & Tracking", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "SmartTapeIcon")
-        let smartBMI = ShopDeciceItemInfoDTO(itemName: "Fitody Smart BMI", itemDescription: "Optimize Your Fitness Performance With Precise Measuring & Tracking", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "WeightScaleIcon")
+        let smartRope = ShopDeciceItemInfoDTO(itemName: "Fitody Smart Tape", itemDescription: "Optimize Your Fitness Performance With Precise Measuring & Tracking", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "SmartTapeIcon")
+        let smartTape = ShopDeciceItemInfoDTO(itemName: "Fitody Smart Rope", itemDescription: "Optimize Your Fitness Performance With Precise Measuring & Tracking", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "SmartJumpRopeIcon")
+        //let smartBMI = ShopDeciceItemInfoDTO(itemName: "Fitody Smart BMI", itemDescription: "Optimize Your Fitness Performance With Precise Measuring & Tracking", itemPrice: "$13.99", itemDiscount: "20% off", itemImageName: "WeightScaleIcon")
         
         deviceDataSource.append(smartWeight)
         deviceDataSource.append(smartRope)
         deviceDataSource.append(smartTape)
-        deviceDataSource.append(smartBMI)
+        //deviceDataSource.append(smartBMI)
 
 
         // Do any additional setup after loading the view.
@@ -70,12 +71,13 @@ class ShopDevicesViewController: BaseViewController, UITableViewDelegate, UITabl
     }
         
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return deviceDataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == bannerDevicesCollectionView {
             let cell = bannerDevicesCollectionView?.dequeueReusableCell(withReuseIdentifier: bannerDeviceCellIdentifier, for: indexPath) as! DeviceBannerCollectionViewCell
+            cell.initCell(itemInfo: deviceDataSource[indexPath.row])
                 
             return cell
         }
@@ -91,7 +93,14 @@ class ShopDevicesViewController: BaseViewController, UITableViewDelegate, UITabl
             return CGSize(width: bannerDevicesCollectionView.frame.width, height: bannerDevicesCollectionView.frame.height)
         }
         else {
-            return CGSize(width: connectedDevicesCollectionView.frame.width/3, height: connectedDevicesCollectionView.frame.height)
+            let width = connectedDevicesCollectionView.bounds.width/3
+            return CGSize(width: width, height: width)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == bannerDevicesCollectionView {
+            bannerDevicesPageControl.currentPage = indexPath.item
         }
     }
     

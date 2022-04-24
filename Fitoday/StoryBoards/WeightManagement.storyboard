@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
         <!--Weight Management View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="WeightManagementViewController" id="Y6W-OH-hqX" customClass="WeightManagementViewController" customModule="Fitoday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeightManagementViewController" id="Y6W-OH-hqX" customClass="WeightManagementViewController" customModule="Fitody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bSc-57-pAJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
         <!--New Weight Goal Set View Controller-->
         <scene sceneID="PB4-nf-xqN">
             <objects>
-                <viewController storyboardIdentifier="NewWeightGoalSetViewController" id="rQc-Px-bfI" customClass="NewWeightGoalSetViewController" customModule="Fitoday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewWeightGoalSetViewController" id="rQc-Px-bfI" customClass="NewWeightGoalSetViewController" customModule="Fitody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UXH-00-KV8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,6 +142,10 @@
                             <constraint firstItem="e1v-un-q4N" firstAttribute="top" secondItem="TlK-hA-iAo" secondAttribute="bottom" constant="35" id="rGY-m3-i0y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnGainWeightGoal" destination="yCP-ug-qbV" id="gVm-N5-4zG"/>
+                        <outlet property="btnLoseWeightGoal" destination="aQZ-qS-4bS" id="iLh-C6-fYa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rjP-0J-Mes" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,7 +154,7 @@
         <!--Current Weight View Controller-->
         <scene sceneID="NnC-Cm-xpc">
             <objects>
-                <viewController storyboardIdentifier="CurrentWeightViewController" id="uES-Rm-cRb" customClass="CurrentWeightViewController" customModule="Fitoday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CurrentWeightViewController" id="uES-Rm-cRb" customClass="CurrentWeightViewController" customModule="Fitody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QK8-k5-ejY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +229,7 @@
         <!--Goal Weight View Controller-->
         <scene sceneID="2Ay-34-156">
             <objects>
-                <viewController storyboardIdentifier="GoalWeightViewController" id="r02-HI-vgZ" customClass="GoalWeightViewController" customModule="Fitoday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalWeightViewController" id="r02-HI-vgZ" customClass="GoalWeightViewController" customModule="Fitody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kpU-ij-IZl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,7 +312,7 @@
         <!--Goal Acheived View Controller-->
         <scene sceneID="s2k-EV-f2k">
             <objects>
-                <viewController storyboardIdentifier="GoalAcheivedViewController" id="2Te-od-rgJ" customClass="GoalAcheivedViewController" customModule="Fitoday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalAcheivedViewController" id="2Te-od-rgJ" customClass="GoalAcheivedViewController" customModule="Fitody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16i-5N-R4H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

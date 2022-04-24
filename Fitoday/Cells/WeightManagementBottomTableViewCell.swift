@@ -9,10 +9,18 @@ import UIKit
 
 class WeightManagementBottomTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var btnUpdateGoal: UIButton!
+    @IBOutlet weak var btnEditGoal: UIButton!
+    @IBOutlet weak var btnShopNow: UIButton!
+    
     var onEditGoalClick: (() -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        btnEditGoal.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 13)
+        btnUpdateGoal.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 13)
+        btnShopNow.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 13)
         // Initialization code
     }
 

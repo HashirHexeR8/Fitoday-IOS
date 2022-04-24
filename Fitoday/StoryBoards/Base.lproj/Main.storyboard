@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +25,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fitoday" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Fitody" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,7 @@
                                                                     <constraint firstAttribute="height" constant="36" id="uRC-7A-nSe"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue With Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddu-tt-Bf5">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue With Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ddu-tt-Bf5">
                                                                 <rect key="frame" x="70" y="19.5" width="205.5" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -94,12 +94,13 @@
                                                         <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="IRY-ED-QVp" firstAttribute="leading" secondItem="p28-it-T34" secondAttribute="leading" constant="10" id="4xl-ba-23M"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ddu-tt-Bf5" secondAttribute="trailing" constant="69.5" id="5ns-x5-yFw"/>
                                                             <constraint firstItem="IRY-ED-QVp" firstAttribute="top" secondItem="p28-it-T34" secondAttribute="top" constant="10" id="AKk-F5-gSK"/>
+                                                            <constraint firstItem="ddu-tt-Bf5" firstAttribute="leading" secondItem="IRY-ED-QVp" secondAttribute="trailing" constant="3" id="BBI-Os-bGH"/>
                                                             <constraint firstItem="ddu-tt-Bf5" firstAttribute="centerY" secondItem="p28-it-T34" secondAttribute="centerY" id="DF2-uj-aTS"/>
                                                             <constraint firstAttribute="width" constant="345" id="ENH-Yc-XBL"/>
                                                             <constraint firstAttribute="bottom" secondItem="IRY-ED-QVp" secondAttribute="bottom" constant="11" id="Xwa-jh-QA2"/>
                                                             <constraint firstAttribute="height" constant="57" id="dwf-gq-Eb3"/>
-                                                            <constraint firstItem="ddu-tt-Bf5" firstAttribute="centerX" secondItem="p28-it-T34" secondAttribute="centerX" id="tB2-Ip-Gzs"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -117,7 +118,7 @@
                                                                     <constraint firstAttribute="width" constant="57" id="wtG-8m-ykk"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue With Gmail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-Bk-o0n">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue With Gmail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-Bk-o0n">
                                                                 <rect key="frame" x="87" y="19.5" width="171" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,11 +128,12 @@
                                                         <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="4g5-Bk-o0n" firstAttribute="centerY" secondItem="vti-xw-EXW" secondAttribute="centerY" id="09t-r4-cec"/>
+                                                            <constraint firstAttribute="trailing" secondItem="4g5-Bk-o0n" secondAttribute="trailing" constant="87" id="0bj-fb-EnQ"/>
                                                             <constraint firstItem="w3c-rZ-PNM" firstAttribute="top" secondItem="vti-xw-EXW" secondAttribute="top" constant="10" id="Tx6-gf-XHa"/>
+                                                            <constraint firstItem="4g5-Bk-o0n" firstAttribute="leading" secondItem="w3c-rZ-PNM" secondAttribute="trailing" constant="20" id="VmL-4r-DJ5"/>
                                                             <constraint firstAttribute="bottom" secondItem="w3c-rZ-PNM" secondAttribute="bottom" constant="10" id="XnF-aY-6Bo"/>
                                                             <constraint firstAttribute="width" constant="345" id="etv-4g-dEY"/>
                                                             <constraint firstAttribute="height" constant="57" id="r7I-CX-gNn"/>
-                                                            <constraint firstItem="4g5-Bk-o0n" firstAttribute="centerX" secondItem="vti-xw-EXW" secondAttribute="centerX" id="rRU-xH-I7I"/>
                                                             <constraint firstItem="w3c-rZ-PNM" firstAttribute="leading" secondItem="vti-xw-EXW" secondAttribute="leading" constant="10" id="wAg-wH-ANu"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
@@ -143,7 +145,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsL-R7-oek" userLabel="btnLoginWithEmail">
                                                         <rect key="frame" x="24.5" y="134" width="345" height="57"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue With Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cn-WL-mgm">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue With Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="8Cn-WL-mgm">
                                                                 <rect key="frame" x="87.5" y="19.5" width="170" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,11 +161,12 @@
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstItem="8Cn-WL-mgm" firstAttribute="centerX" secondItem="lsL-R7-oek" secondAttribute="centerX" id="5Um-q8-AdD"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8Cn-WL-mgm" secondAttribute="trailing" constant="87.5" id="H9Q-Z9-MtI"/>
                                                             <constraint firstItem="8Cn-WL-mgm" firstAttribute="centerY" secondItem="lsL-R7-oek" secondAttribute="centerY" id="ITB-YM-CV8"/>
                                                             <constraint firstItem="fna-6V-xvf" firstAttribute="top" secondItem="lsL-R7-oek" secondAttribute="top" constant="16" id="NwQ-48-JG4"/>
                                                             <constraint firstAttribute="bottom" secondItem="fna-6V-xvf" secondAttribute="bottom" constant="19" id="T1C-8E-eie"/>
                                                             <constraint firstAttribute="height" constant="57" id="UeO-8c-wuj"/>
+                                                            <constraint firstItem="8Cn-WL-mgm" firstAttribute="leading" secondItem="fna-6V-xvf" secondAttribute="trailing" constant="38.5" id="gyS-v5-x3Q"/>
                                                             <constraint firstItem="fna-6V-xvf" firstAttribute="leading" secondItem="lsL-R7-oek" secondAttribute="leading" constant="23" id="iZP-9o-lCz"/>
                                                             <constraint firstAttribute="width" constant="345" id="tqK-x3-Ozx"/>
                                                         </constraints>
@@ -176,8 +179,8 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-U5-OuD" userLabel="btnJoinFitoday">
                                                         <rect key="frame" x="122" y="201" width="150" height="57"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Fitoday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pob-Fc-CSr">
-                                                                <rect key="frame" x="23" y="19.5" width="104" height="18"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Fitody" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pob-Fc-CSr">
+                                                                <rect key="frame" x="28.5" y="19.5" width="93.5" height="18"/>
                                                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -213,6 +216,7 @@
                                     <constraint firstAttribute="bottom" secondItem="KQY-3P-O5L" secondAttribute="bottom" id="DOI-S3-Kdp"/>
                                     <constraint firstItem="KQY-3P-O5L" firstAttribute="top" secondItem="02G-IO-7k0" secondAttribute="bottom" id="Pze-aB-a0d"/>
                                     <constraint firstItem="02G-IO-7k0" firstAttribute="height" secondItem="0LJ-7w-PhE" secondAttribute="height" multiplier="0.5" id="X7n-0v-tso"/>
+                                    <constraint firstItem="KQY-3P-O5L" firstAttribute="height" secondItem="0LJ-7w-PhE" secondAttribute="height" multiplier="0.5" id="cIz-xF-nXA"/>
                                     <constraint firstItem="3Dp-pX-iKF" firstAttribute="height" secondItem="0LJ-7w-PhE" secondAttribute="height" multiplier="0.05" id="sXe-8q-oNC"/>
                                 </constraints>
                             </stackView>

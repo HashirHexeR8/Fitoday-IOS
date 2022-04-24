@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JumpingRopesLandingHeaderTableViewCell" customModule="Fitoday" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JumpingRopesLandingHeaderTableViewCell" customModule="Fitody" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="450" height="350"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -29,21 +29,21 @@
                                 <rect key="frame" x="0.0" y="15" width="450" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geq-6X-2cD" userLabel="JumpRopesBackButton">
-                                        <rect key="frame" x="15" y="9" width="16" height="22"/>
+                                        <rect key="frame" x="15" y="9" width="13" height="22"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="BackButtonWhite">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JumpingRopesTopBarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vFc-wd-MkQ">
-                                        <rect key="frame" x="46" y="10" width="20" height="20"/>
+                                        <rect key="frame" x="43" y="10" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="HyT-Cy-PPg"/>
                                             <constraint firstAttribute="width" constant="20" id="ogE-XG-Kpm"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Jumping Rope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-E5-Clc">
-                                        <rect key="frame" x="126" y="9.5" width="198.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Jumping Rope" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Xar-E5-Clc">
+                                        <rect key="frame" x="73" y="9.5" width="304" height="21"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -73,9 +73,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="LCD-yg-dud" firstAttribute="leading" secondItem="Xar-E5-Clc" secondAttribute="trailing" constant="10" id="8ld-tt-f27"/>
                                     <constraint firstItem="Xar-E5-Clc" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="Ehg-lr-v9O"/>
                                     <constraint firstItem="LCD-yg-dud" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="Gr0-0B-i1B"/>
                                     <constraint firstAttribute="trailing" secondItem="FRc-OF-tHh" secondAttribute="trailing" constant="18" id="Jfo-Dy-wRW"/>
+                                    <constraint firstItem="Xar-E5-Clc" firstAttribute="leading" secondItem="vFc-wd-MkQ" secondAttribute="trailing" constant="10" id="Kiv-Qz-hIY"/>
                                     <constraint firstAttribute="height" constant="40" id="RR9-GI-h1B"/>
                                     <constraint firstItem="vFc-wd-MkQ" firstAttribute="leading" secondItem="geq-6X-2cD" secondAttribute="trailing" constant="15" id="UBw-pL-tVk"/>
                                     <constraint firstItem="FRc-OF-tHh" firstAttribute="centerY" secondItem="0Ah-uM-ZK9" secondAttribute="centerY" id="Xsu-Fc-qcj"/>

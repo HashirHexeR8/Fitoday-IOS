@@ -11,6 +11,7 @@ import UIKit
 class GoalWeightViewController: BaseViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var weightPicker: UIPickerView!
+    @IBOutlet weak var btnSetGoal: UIButton!
     
     private var weightValue: [String] = []
     private var weightPointValue: [String] = []
@@ -18,6 +19,8 @@ class GoalWeightViewController: BaseViewController, UIPickerViewDelegate, UIPick
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        btnSetGoal.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 16)
         
         weightPicker.delegate = self
         weightPicker.dataSource = self

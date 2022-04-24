@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Fitoday" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Fitody" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="AbS-ZX-Pzf" id="5NZ-Qx-KmF"/>
                 <outlet property="createAccountButton" destination="byO-zV-TPo" id="Lou-iA-tcW"/>
@@ -29,7 +29,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="PsK-io-j9b" customClass="GradientView" customModule="Fitoday" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="PsK-io-j9b" customClass="GradientView" customModule="Fitody" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -55,7 +55,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-fE-5XW" userLabel="containerEmailField">
                                             <rect key="frame" x="0.0" y="0.0" width="373" height="57"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XER-qj-ly4" customClass="FitodayTextField" customModule="Fitoday" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XER-qj-ly4" customClass="FitodayTextField" customModule="Fitody" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="373" height="57"/>
                                                     <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,7 +90,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Sf-TV-m54" userLabel="containerPasswordField">
                                             <rect key="frame" x="0.0" y="87" width="373" height="56.5"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQq-Lp-UKh" customClass="FitodayTextField" customModule="Fitoday" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vQq-Lp-UKh" customClass="FitodayTextField" customModule="Fitody" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="373" height="56.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,7 +148,6 @@
                                                         <constraint firstItem="Op4-QZ-DFD" firstAttribute="leading" secondItem="UVD-aq-REh" secondAttribute="trailing" constant="15" id="XHg-NP-QCZ"/>
                                                         <constraint firstItem="Op4-QZ-DFD" firstAttribute="centerY" secondItem="JSG-td-8Tz" secondAttribute="centerY" id="hUs-Y7-lTJ"/>
                                                         <constraint firstAttribute="height" constant="30" id="lf9-Wt-0o7"/>
-                                                        <constraint firstAttribute="width" constant="360" id="uRx-zb-0lA"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDl-Q4-0ad" userLabel="SeparatorTop">
@@ -259,7 +258,6 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="EDl-Q4-0ad" firstAttribute="width" secondItem="JSG-td-8Tz" secondAttribute="width" id="18v-y4-2F7"/>
                                                 <constraint firstItem="JSG-td-8Tz" firstAttribute="top" secondItem="d5l-Xu-YRM" secondAttribute="top" id="3yW-2y-jds"/>
                                                 <constraint firstAttribute="trailing" secondItem="TWu-jG-lXj" secondAttribute="trailing" constant="40" id="4bD-9Y-fAo"/>
                                                 <constraint firstItem="TWu-jG-lXj" firstAttribute="leading" secondItem="d5l-Xu-YRM" secondAttribute="leading" constant="40" id="CQo-Wm-Axk"/>
@@ -269,7 +267,9 @@
                                                 <constraint firstAttribute="bottom" secondItem="TuN-LC-vU8" secondAttribute="bottom" constant="5" id="fJb-Bi-crA"/>
                                                 <constraint firstItem="TWu-jG-lXj" firstAttribute="top" secondItem="EDl-Q4-0ad" secondAttribute="bottom" constant="15" id="feX-pl-UQ8"/>
                                                 <constraint firstItem="TuN-LC-vU8" firstAttribute="leading" secondItem="d5l-Xu-YRM" secondAttribute="leading" constant="6" id="mAx-YY-DKr"/>
+                                                <constraint firstItem="JSG-td-8Tz" firstAttribute="width" secondItem="d5l-Xu-YRM" secondAttribute="width" multiplier="0.965147" id="qyU-SW-85x"/>
                                                 <constraint firstItem="EDl-Q4-0ad" firstAttribute="leading" secondItem="d5l-Xu-YRM" secondAttribute="leading" constant="10" id="sCZ-2B-tfM"/>
+                                                <constraint firstItem="EDl-Q4-0ad" firstAttribute="width" secondItem="d5l-Xu-YRM" secondAttribute="width" multiplier="0.965147" id="uo5-K1-fM5"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pY9-Sc-zFb" userLabel="HeightInfoContainer">
@@ -356,10 +356,10 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXD-bg-ER9" userLabel="GenderInfoContainer">
-                                            <rect key="frame" x="10" y="624" width="353" height="76"/>
+                                            <rect key="frame" x="10" y="624" width="353.5" height="76"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lFy-k5-Ksx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="353" height="76"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="353.5" height="76"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKW-1t-nn4">
                                                             <rect key="frame" x="0.0" y="29.5" width="108.5" height="17"/>
@@ -368,7 +368,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQe-sW-aHM" userLabel="MaleContainer">
-                                                            <rect key="frame" x="122.5" y="13" width="108" height="50"/>
+                                                            <rect key="frame" x="122.5" y="13" width="108.5" height="50"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="s6f-4v-P8w" userLabel="privacyPolocyCheckbox">
                                                                     <rect key="frame" x="5" y="15.5" width="19" height="19"/>
@@ -389,7 +389,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddu-Mt-KXf" userLabel="Female Container">
-                                                            <rect key="frame" x="244.5" y="13" width="108.5" height="50"/>
+                                                            <rect key="frame" x="245" y="13" width="108.5" height="50"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="qa6-KW-hvM" userLabel="privacyPolocyCheckbox">
                                                                     <rect key="frame" x="5" y="15.5" width="19" height="19"/>
@@ -440,7 +440,6 @@
                                     <viewLayoutGuide key="safeArea" id="QNY-LR-wdf"/>
                                     <constraints>
                                         <constraint firstItem="Krs-fE-5XW" firstAttribute="trailing" secondItem="QNY-LR-wdf" secondAttribute="trailing" id="03U-FS-WNR"/>
-                                        <constraint firstItem="DXD-bg-ER9" firstAttribute="width" secondItem="nzw-Zz-ftf" secondAttribute="width" multiplier="0.946381" id="5JN-sU-Qam"/>
                                         <constraint firstItem="byO-zV-TPo" firstAttribute="height" secondItem="nzw-Zz-ftf" secondAttribute="height" multiplier="0.075" id="7th-jY-YKM"/>
                                         <constraint firstItem="8Sf-TV-m54" firstAttribute="leading" secondItem="QNY-LR-wdf" secondAttribute="leading" id="7yP-LM-8eN"/>
                                         <constraint firstItem="byO-zV-TPo" firstAttribute="leading" secondItem="QNY-LR-wdf" secondAttribute="leading" constant="20" id="EZd-CZ-AT7"/>
@@ -448,10 +447,7 @@
                                         <constraint firstItem="8Sf-TV-m54" firstAttribute="trailing" secondItem="QNY-LR-wdf" secondAttribute="trailing" id="HQR-PW-W52"/>
                                         <constraint firstItem="Krs-fE-5XW" firstAttribute="leading" secondItem="QNY-LR-wdf" secondAttribute="leading" id="I5d-kg-J13"/>
                                         <constraint firstItem="8Sf-TV-m54" firstAttribute="height" secondItem="nzw-Zz-ftf" secondAttribute="height" multiplier="0.072" id="IRY-ho-zao"/>
-                                        <constraint firstItem="d5l-Xu-YRM" firstAttribute="width" secondItem="8Sf-TV-m54" secondAttribute="width" id="TaS-S2-IaH"/>
                                         <constraint firstItem="RqF-xF-kz3" firstAttribute="height" secondItem="nzw-Zz-ftf" secondAttribute="height" multiplier="0.0633714" id="ak9-4s-JsK"/>
-                                        <constraint firstItem="RqF-xF-kz3" firstAttribute="width" secondItem="nzw-Zz-ftf" secondAttribute="width" multiplier="0.946381" id="eAI-PL-fMy"/>
-                                        <constraint firstItem="pY9-Sc-zFb" firstAttribute="width" secondItem="nzw-Zz-ftf" secondAttribute="width" multiplier="0.946381" id="fTs-uy-jqG"/>
                                         <constraint firstItem="Krs-fE-5XW" firstAttribute="height" secondItem="nzw-Zz-ftf" secondAttribute="height" multiplier="0.072" id="iM7-zP-XHn"/>
                                         <constraint firstItem="pY9-Sc-zFb" firstAttribute="height" secondItem="nzw-Zz-ftf" secondAttribute="height" multiplier="0.0633714" id="nYx-Sw-v7x"/>
                                         <constraint firstItem="QNY-LR-wdf" firstAttribute="trailing" secondItem="byO-zV-TPo" secondAttribute="trailing" constant="20" id="oRj-pM-xdF"/>
@@ -480,10 +476,17 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="AbS-ZX-Pzf" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" id="4l9-WB-6ME"/>
+                <constraint firstItem="pY9-Sc-zFb" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.852657" id="8HY-jv-6Ia"/>
+                <constraint firstItem="d5l-Xu-YRM" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.900966" id="9nH-eP-RIQ"/>
+                <constraint firstItem="8Sf-TV-m54" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.900966" id="Cg5-cz-YHN"/>
                 <constraint firstItem="4Ao-j2-aJJ" firstAttribute="top" secondItem="PsK-io-j9b" secondAttribute="top" id="IOw-3b-Kq7"/>
                 <constraint firstAttribute="bottom" secondItem="4Ao-j2-aJJ" secondAttribute="bottom" id="SVh-xd-bRN"/>
                 <constraint firstAttribute="trailing" secondItem="4Ao-j2-aJJ" secondAttribute="trailing" id="WuJ-8v-HuN"/>
+                <constraint firstItem="DXD-bg-ER9" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.853865" id="h3J-bH-VAO"/>
+                <constraint firstItem="Krs-fE-5XW" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.900966" id="mOO-K9-LGs"/>
+                <constraint firstItem="RqF-xF-kz3" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.852657" id="nsU-ts-9Xg"/>
                 <constraint firstItem="4Ao-j2-aJJ" firstAttribute="leading" secondItem="PsK-io-j9b" secondAttribute="leading" id="riD-o6-AnS"/>
+                <constraint firstItem="byO-zV-TPo" firstAttribute="width" secondItem="PsK-io-j9b" secondAttribute="width" multiplier="0.804348" id="vef-gX-muC"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
@@ -499,10 +502,10 @@
     </objects>
     <designables>
         <designable name="XER-qj-ly4">
-            <size key="intrinsicContentSize" width="119.5" height="47.5"/>
+            <size key="intrinsicContentSize" width="145.5" height="34"/>
         </designable>
         <designable name="vQq-Lp-UKh">
-            <size key="intrinsicContentSize" width="118" height="46"/>
+            <size key="intrinsicContentSize" width="144" height="34"/>
         </designable>
     </designables>
     <resources>

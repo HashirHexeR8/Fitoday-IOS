@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="BodyProportionTableViewCell" customModule="Fitoday" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="BodyProportionTableViewCell" customModule="Fitody" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -23,26 +23,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXJ-qk-Hr0">
-                        <rect key="frame" x="110" y="17" width="100" height="30"/>
+                        <rect key="frame" x="120" y="17" width="80" height="30"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1y-wA-qHT">
-                                <rect key="frame" x="33" y="8" width="34" height="14"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Q1y-wA-qHT">
+                                <rect key="frame" x="23" y="8" width="34" height="14"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="13"/>
                                 <color key="textColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJD-2v-BRo">
-                                <rect key="frame" x="30" y="3" width="40" height="25"/>
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jW-x0-fta">
-                                        <rect key="frame" x="5" y="3" width="18" height="10"/>
-                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="8"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="3jW-x0-fta">
+                                        <rect key="frame" x="29.5" y="3" width="21" height="9"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="8"/>
                                         <color key="textColor" red="0.93725490199999995" green="0.25882352939999997" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.5 inch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aY-VD-7A2">
-                                        <rect key="frame" x="5" y="15" width="33" height="10"/>
-                                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="8"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.5 inch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="3aY-VD-7A2">
+                                        <rect key="frame" x="23.5" y="14" width="33" height="9"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="8"/>
                                         <color key="textColor" red="0.0" green="0.1215686275" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -50,9 +50,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="3aY-VD-7A2" firstAttribute="top" secondItem="3jW-x0-fta" secondAttribute="bottom" constant="2" id="5Xs-Nm-CSq"/>
-                                    <constraint firstItem="3jW-x0-fta" firstAttribute="leading" secondItem="YJD-2v-BRo" secondAttribute="leading" constant="5" id="Oac-63-qVG"/>
-                                    <constraint firstItem="3jW-x0-fta" firstAttribute="top" secondItem="YJD-2v-BRo" secondAttribute="top" constant="3" id="baf-7b-Ydk"/>
-                                    <constraint firstItem="3aY-VD-7A2" firstAttribute="leading" secondItem="YJD-2v-BRo" secondAttribute="leading" constant="5" id="y7q-1T-opc"/>
+                                    <constraint firstItem="3aY-VD-7A2" firstAttribute="top" secondItem="3jW-x0-fta" secondAttribute="bottom" constant="2" id="Tu5-Bq-vPI"/>
+                                    <constraint firstItem="3jW-x0-fta" firstAttribute="centerX" secondItem="YJD-2v-BRo" secondAttribute="centerX" id="VtX-wh-Z19"/>
+                                    <constraint firstItem="3jW-x0-fta" firstAttribute="top" secondItem="YJD-2v-BRo" secondAttribute="top" constant="3" id="hvz-YO-FaV"/>
+                                    <constraint firstItem="3aY-VD-7A2" firstAttribute="centerX" secondItem="YJD-2v-BRo" secondAttribute="centerX" id="uQg-gb-je4"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -63,15 +64,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.84313725490196079" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="3TI-zD-Hbd"/>
-                            <constraint firstItem="YJD-2v-BRo" firstAttribute="top" secondItem="aXJ-qk-Hr0" secondAttribute="top" constant="3" id="56P-3o-6IW"/>
+                            <constraint firstItem="YJD-2v-BRo" firstAttribute="top" secondItem="aXJ-qk-Hr0" secondAttribute="top" id="2Cx-kw-a73"/>
+                            <constraint firstAttribute="width" constant="80" id="3TI-zD-Hbd"/>
+                            <constraint firstItem="YJD-2v-BRo" firstAttribute="leading" secondItem="aXJ-qk-Hr0" secondAttribute="leading" id="7fi-od-QsR"/>
                             <constraint firstAttribute="height" constant="30" id="GSk-f3-IZg"/>
-                            <constraint firstItem="YJD-2v-BRo" firstAttribute="leading" secondItem="aXJ-qk-Hr0" secondAttribute="leading" constant="30" id="Hc7-mG-baf"/>
-                            <constraint firstAttribute="trailing" secondItem="YJD-2v-BRo" secondAttribute="trailing" constant="30" id="MEA-Bq-7nj"/>
+                            <constraint firstAttribute="bottom" secondItem="YJD-2v-BRo" secondAttribute="bottom" id="Iyd-AH-FeJ"/>
+                            <constraint firstAttribute="trailing" secondItem="YJD-2v-BRo" secondAttribute="trailing" id="NCJ-RM-xlR"/>
                             <constraint firstItem="Q1y-wA-qHT" firstAttribute="centerX" secondItem="aXJ-qk-Hr0" secondAttribute="centerX" id="OVu-ZA-iSW"/>
                             <constraint firstItem="Q1y-wA-qHT" firstAttribute="centerY" secondItem="aXJ-qk-Hr0" secondAttribute="centerY" id="j2C-Zb-V2g"/>
-                            <constraint firstAttribute="bottom" secondItem="YJD-2v-BRo" secondAttribute="bottom" constant="2" id="oDe-jo-i10"/>
-                            <constraint firstItem="Q1y-wA-qHT" firstAttribute="top" secondItem="aXJ-qk-Hr0" secondAttribute="top" constant="8" id="p7m-g8-eaX"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -81,7 +81,6 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="aXJ-qk-Hr0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="94" id="6id-6C-GiI"/>
                     <constraint firstItem="aXJ-qk-Hr0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rWf-F4-81l"/>
                     <constraint firstItem="aXJ-qk-Hr0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="voc-UO-mdT"/>
                 </constraints>

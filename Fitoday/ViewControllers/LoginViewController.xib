@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Fitoday" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Fitody" customModuleProvider="target">
             <connections>
                 <outlet property="btnLogin" destination="dZQ-Tt-LIM" id="pCW-A3-pTi"/>
                 <outlet property="containerPasswordField" destination="L9P-RJ-5Y5" id="CC8-5b-UBR"/>
@@ -32,7 +32,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-d8-bEJ" customClass="GradientView" customModule="Fitoday" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-d8-bEJ" customClass="GradientView" customModule="Fitody" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Get Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ye-Te-FSl">
@@ -47,7 +47,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-c4-7Xi" userLabel="containerEmailField">
                                     <rect key="frame" x="10" y="0.0" width="373" height="60"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-oL-5SO" customClass="FitodayTextField" customModule="Fitoday" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xt6-oL-5SO" customClass="FitodayTextField" customModule="Fitody" customModuleProvider="target">
                                             <rect key="frame" x="10" y="0.0" width="353" height="60"/>
                                             <color key="backgroundColor" red="0.0" green="0.12156862745098039" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,7 +70,6 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Xt6-oL-5SO" secondAttribute="trailing" constant="10" id="71r-q1-C88"/>
                                         <constraint firstItem="Xt6-oL-5SO" firstAttribute="leading" secondItem="7DM-c4-7Xi" secondAttribute="leading" constant="10" id="LP3-t6-YU3"/>
-                                        <constraint firstAttribute="width" constant="373" id="MLy-4X-F7a"/>
                                         <constraint firstAttribute="bottom" secondItem="Xt6-oL-5SO" secondAttribute="bottom" id="fE5-Nu-JSO"/>
                                         <constraint firstItem="Xt6-oL-5SO" firstAttribute="top" secondItem="7DM-c4-7Xi" secondAttribute="top" id="juO-4q-h4X"/>
                                         <constraint firstAttribute="height" constant="60" id="lzZ-UU-H7i"/>
@@ -84,7 +83,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9P-RJ-5Y5" userLabel="containerPasswordField">
                                     <rect key="frame" x="10" y="94" width="373" height="60"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ak-rS-0pQ" customClass="FitodayTextField" customModule="Fitoday" customModuleProvider="target">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ak-rS-0pQ" customClass="FitodayTextField" customModule="Fitody" customModuleProvider="target">
                                             <rect key="frame" x="10" y="0.0" width="353" height="60"/>
                                             <color key="backgroundColor" red="0.0" green="0.12156862745098039" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,8 +108,6 @@
                                         <constraint firstItem="1ak-rS-0pQ" firstAttribute="top" secondItem="L9P-RJ-5Y5" secondAttribute="top" id="46k-7I-mac"/>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="KSd-Qg-Oyt"/>
                                         <constraint firstAttribute="trailing" secondItem="1ak-rS-0pQ" secondAttribute="trailing" constant="10" id="NLJ-LJ-VhW"/>
-                                        <constraint firstAttribute="width" constant="373" id="NMi-iW-skd"/>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="373" id="QMO-mU-I4Q"/>
                                         <constraint firstAttribute="bottom" secondItem="1ak-rS-0pQ" secondAttribute="bottom" id="m0o-ps-NZh"/>
                                         <constraint firstAttribute="height" constant="60" id="wyB-mm-K72"/>
                                     </constraints>
@@ -129,8 +126,8 @@
                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="7KT-Kh-5pd" userLabel="privacyPolocyCheckbox">
                                                     <rect key="frame" x="5" y="5" width="19" height="19"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the Fitody Terms of Service. Please also read the Privacy Policy. Including the Cookies Use. Statement" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZR-4m-716">
-                                                    <rect key="frame" x="44" y="5" width="273" height="40.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I agree to the Fitody terms and conditions, and I consent to Fitody processing my personal data, including Body Metrics data" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZR-4m-716">
+                                                    <rect key="frame" x="44" y="5" width="273" height="54"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="273" id="Pdq-t1-iSY"/>
                                                     </constraints>
@@ -153,7 +150,7 @@
                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="RuN-5X-OYx" userLabel="updatesPolicyCheckbox">
                                                     <rect key="frame" x="5" y="10" width="19" height="19"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep me updated about the Fitoday Products, news and promotions" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QM-xm-13c">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I consent to receiving sales and marketing communication from Fitody" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QM-xm-13c">
                                                     <rect key="frame" x="44" y="10" width="273" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="273" id="rau-zJ-lOf"/>
@@ -177,8 +174,10 @@
                                         <constraint firstItem="vZW-7V-PME" firstAttribute="top" secondItem="yoa-YS-mrA" secondAttribute="top" id="Df0-Hl-lbh"/>
                                         <constraint firstAttribute="height" constant="100" id="MMA-jd-mPC"/>
                                         <constraint firstAttribute="trailing" secondItem="FBo-os-WS2" secondAttribute="trailing" id="MXO-81-FQm"/>
+                                        <constraint firstItem="2QM-xm-13c" firstAttribute="width" secondItem="yoa-YS-mrA" secondAttribute="width" multiplier="0.731903" id="OlW-pl-1tx"/>
                                         <constraint firstAttribute="trailing" secondItem="vZW-7V-PME" secondAttribute="trailing" id="WWK-rh-28Q"/>
                                         <constraint firstItem="FBo-os-WS2" firstAttribute="top" secondItem="vZW-7V-PME" secondAttribute="bottom" constant="10" id="XA1-BB-zOr"/>
+                                        <constraint firstItem="UZR-4m-716" firstAttribute="width" secondItem="yoa-YS-mrA" secondAttribute="width" multiplier="0.731903" id="hno-Y2-qQL"/>
                                         <constraint firstItem="FBo-os-WS2" firstAttribute="leading" secondItem="yoa-YS-mrA" secondAttribute="leading" id="wGB-Wt-5cK"/>
                                     </constraints>
                                 </view>
@@ -189,9 +188,8 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZQ-Tt-LIM">
-                                    <rect key="frame" x="24" y="374" width="345" height="57"/>
+                                    <rect key="frame" x="49" y="374" width="295" height="57"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="345" id="OF6-VJ-lQG"/>
                                         <constraint firstAttribute="height" constant="57" id="gQt-2M-bK0"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
@@ -208,6 +206,9 @@
                             </subviews>
                             <constraints>
                                 <constraint firstItem="yoa-YS-mrA" firstAttribute="leading" secondItem="lmu-xG-y39" secondAttribute="leading" constant="10" id="Lww-vt-bHU"/>
+                                <constraint firstItem="L9P-RJ-5Y5" firstAttribute="width" secondItem="lmu-xG-y39" secondAttribute="width" multiplier="0.949109" id="Tml-Lt-3TP"/>
+                                <constraint firstItem="7DM-c4-7Xi" firstAttribute="width" secondItem="lmu-xG-y39" secondAttribute="width" multiplier="0.949109" id="Ye9-EV-niC"/>
+                                <constraint firstItem="dZQ-Tt-LIM" firstAttribute="width" secondItem="lmu-xG-y39" secondAttribute="width" multiplier="0.75" id="jQ8-nP-Q58"/>
                                 <constraint firstAttribute="trailing" secondItem="yoa-YS-mrA" secondAttribute="trailing" constant="10" id="tgw-K9-kcY"/>
                             </constraints>
                         </stackView>
@@ -215,6 +216,8 @@
                     <color key="backgroundColor" systemColor="systemGray2Color"/>
                     <constraints>
                         <constraint firstItem="4Ye-Te-FSl" firstAttribute="centerX" secondItem="7FB-d8-bEJ" secondAttribute="centerX" id="2vL-gP-EsS"/>
+                        <constraint firstItem="lmu-xG-y39" firstAttribute="leading" secondItem="7FB-d8-bEJ" secondAttribute="leading" constant="10.5" id="8i5-Up-Y1O"/>
+                        <constraint firstAttribute="trailing" secondItem="lmu-xG-y39" secondAttribute="trailing" constant="10.5" id="JfO-tp-gaZ"/>
                         <constraint firstItem="lmu-xG-y39" firstAttribute="top" secondItem="4Ye-Te-FSl" secondAttribute="bottom" constant="40" id="Rqh-G6-5Gw"/>
                         <constraint firstItem="lmu-xG-y39" firstAttribute="centerX" secondItem="7FB-d8-bEJ" secondAttribute="centerX" id="kOh-37-gSV"/>
                         <constraint firstItem="4Ye-Te-FSl" firstAttribute="top" secondItem="7FB-d8-bEJ" secondAttribute="top" constant="80" id="oYw-he-t3Q"/>

@@ -9,8 +9,11 @@ import UIKit
 
 class SettingsLogoutButtonTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var btnLogout: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        btnLogout.titleLabel?.font = UIFont(name: "Comfortaa-Bold", size: 18)
         // Initialization code
     }
 

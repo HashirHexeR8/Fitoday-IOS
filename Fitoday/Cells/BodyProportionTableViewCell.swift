@@ -29,6 +29,14 @@ class BodyProportionTableViewCell: UITableViewCell {
     
     func initCell(itemInfo: BodyPropotionsItemDTO, isLeftTableView: Bool) {
         
+        if isLeftTableView {
+            bodyProportionItemParentView.backgroundColor = UIColor(hexString: "#FFD7E1")
+            bodyProportionName.textColor = UIColor(hexString: "#EF426F")
+        }
+        else {
+            bodyProportionItemParentView.backgroundColor = UIColor(hexString: "#8BC4FF")
+            bodyProportionName.textColor = UIColor(hexString: "#001F3F")
+        }
         
         if itemInfo.bodyPropotionsMeasurementValue.isEmpty {
             bodyProportionKeyValueView.isHidden = true
